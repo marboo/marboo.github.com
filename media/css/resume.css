@@ -1,0 +1,75 @@
+body {
+    background-color: #fff;
+}
+
+.paper {
+    padding: 0px 40px 0px 40px;
+    border: 0px;
+    border-top: none;
+    width: 960px;
+    height: auto;
+    background-color: #fff;
+    margin: 0px auto 0px auto;
+    line-height: 160%;
+}
+
+div[id="info"] {
+    float: right;
+    font-size: 12pt;
+    background-color:#fff;
+}
+
+img[id="mail"] {
+    src: "images/amoblin_gmail.gif";
+}
+
+img[id="tel"] {
+    src: "images/amoblin_phone.png";
+}
+
+#contact {
+    float: right;
+}
+
+article {
+    display:block;
+    font-size: 12pt;
+}
+
+dt {
+    float: left;
+}
+
+dd {
+    margin-left: 140px;
+    padding-left: 10px;
+}
+
+div[id="info"] ul li {
+    width: 100%;
+    list-style-type: none;
+}
+
+.award {
+    width: 400px;
+    float: left;
+}
+
+.cate {
+    line-height: 100%;
+    font-size: 12pt;
+    font-weight: bold;
+    border-style: none none solid none;
+    border-width: 2px;
+    border-color: #C5E7C6;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#signature {
+    font-family: Kai;
+    font-size: 18pt;
+}
+
+.clear{clear:both}
