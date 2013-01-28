@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.9.1: http://docutils.sourceforge.net/" />
+<title>欢迎使用Marboo</title>
+<link rel="stylesheet" href="/media/css/marboo.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="marboo-version">
+<h1 class="title">Marboo用户手册(v0.4.1)</h1>
+
+<div class="contents topic" id="id1">
+<p class="topic-title first">目录</p>
+<ul class="simple">
+<li><a class="reference internal" href="#marboo" id="id41">欢迎使用Marboo</a></li>
+<li><a class="reference internal" href="#id2" id="id42">Marboo是什么？</a></li>
+<li><a class="reference internal" href="#id3" id="id43">创作理念</a></li>
+<li><a class="reference internal" href="#id5" id="id44">使用Marboo</a><ul>
+<li><a class="reference internal" href="#id6" id="id45">本地化支持</a></li>
+<li><a class="reference internal" href="#id7" id="id46">笔记管理</a><ul>
+<li><a class="reference internal" href="#id8" id="id47">新建笔记</a></li>
+<li><a class="reference internal" href="#id9" id="id48">编辑笔记</a></li>
+<li><a class="reference internal" href="#id10" id="id49">预览笔记</a></li>
+<li><a class="reference internal" href="#id11" id="id50">删除笔记</a></li>
+<li><a class="reference internal" href="#id12" id="id51">刷新笔记缩略图</a></li>
+<li><a class="reference internal" href="#id13" id="id52">增加笔记本</a></li>
+<li><a class="reference internal" href="#id14" id="id53">自动化操作</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id15" id="id54">Marboo偏好设置</a><ul>
+<li><a class="reference internal" href="#id16" id="id55">设置默认编辑器</a></li>
+<li><a class="reference internal" href="#id17" id="id56">修改主题</a></li>
+<li><a class="reference internal" href="#id18" id="id57">添加图片</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#evernote" id="id58">Evernote相关</a><ul>
+<li><a class="reference internal" href="#id19" id="id59">导入Evernote笔记</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id20" id="id60">图片画廊展示</a></li>
+<li><a class="reference internal" href="#jekyll-octopress" id="id61">Jekyll/Octopress相关</a><ul>
+<li><a class="reference internal" href="#id21" id="id62">导入jekyll/Octopress博客</a></li>
+<li><a class="reference internal" href="#id22" id="id63">发布到jekyll/Octopress博客</a></li>
+<li><a class="reference internal" href="#id24" id="id64">一键发布博客</a></li>
+<li><a class="reference internal" href="#farbox" id="id65">发布到FarBox</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id26" id="id66">读书</a><ul>
+<li><a class="reference internal" href="#pro-git" id="id67">Pro Git</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#web" id="id68">写WEB页面</a></li>
+<li><a class="reference internal" href="#id28" id="id69">管理代码</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id29" id="id70">Marboo目录组织</a><ul>
+<li><a class="reference internal" href="#source" id="id71">source目录</a><ul>
+<li><a class="reference internal" href="#id30" id="id72">三层目录规范</a></li>
+<li><a class="reference internal" href="#media" id="id73">media目录</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#build" id="id74">build目录</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id31" id="id75">Marboo进阶</a><ul>
+<li><a class="reference internal" href="#id32" id="id76">修改初始化文件内容</a><ul>
+<li><a class="reference internal" href="#rst" id="id77">rst文件初始化</a></li>
+<li><a class="reference internal" href="#md" id="id78">md文件初始化</a></li>
+<li><a class="reference internal" href="#html" id="id79">html文件初始化</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id33" id="id80">增加笔记格式</a><ul>
+<li><a class="reference internal" href="#id34" id="id81">脚本输入输入接口规范</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id35" id="id82">修改笔记HTML模板</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id36" id="id83">更新</a><ul>
+<li><a class="reference internal" href="#id37" id="id84">更新本手册</a></li>
+<li><a class="reference internal" href="#id38" id="id85">更新本软件</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#todo" id="id86">TODO</a><ul>
+<li><a class="reference internal" href="#open-folder-in-terminal" id="id87">open folder in terminal</a></li>
+<li><a class="reference internal" href="#htmlmarkdown" id="id88">HTML转Markdown</a></li>
+<li><a class="reference internal" href="#id40" id="id89">更多的版式</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- author: amoblin <amoblin@gmail.com> -->
+<div class="section" id="marboo">
+<h1><a class="toc-backref" href="#id41">欢迎使用Marboo</a></h1>
+<p>自0.4.1版起，MarkBook改名为Marboo，同时更换了全新的界面。看着还可以吧？</p>
+<p>欢迎您使用Marboo，目前版本为 v0.4.1</p>
+<p>查看新增了什么功能： <a class="reference external" href="https://github.com/marboo/marboo-doc/commits/master">https://github.com/marboo/marboo-doc/commits/master</a></p>
+<p>也可以在本地执行下面的操作：</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> <span style="color: #008000">cd</span> ~/.marboo/source/MyNotes.localized/marboo-doc<br/><span style="color: #000080; font-weight: bold">$</span> git log -p<br/></pre></div>
+</div>
+<div class="section" id="id2">
+<h1><a class="toc-backref" href="#id42">Marboo是什么？</a></h1>
+<p>Marboo是用来管理置标语言文档及其相关资源的，内置支持格式有如下几种：</p>
+<ul class="simple">
+<li>reStructuredText</li>
+<li>Markdown</li>
+<li>HTML (use <a class="reference external" href="http://twitter.github.com/bootstrap/">twitter bootstrap</a>)</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>PNG, JPG, GIF等图片格式。</li>
+<li>SHELL脚本。</li>
+<li>Pygments支持的程序文件（语法高亮显示）。</li>
+</ul>
+<p>通过 <a class="reference internal" href="#id33">增加笔记格式</a> 可以支持任意一种置标语言，包括但不限于：</p>
+<ul class="simple">
+<li>AsciiDoc</li>
+<li>Wiki</li>
+<li>TextTile</li>
+</ul>
+<p>此外，还通过管理CSS和图片来实现Theme样式。</p>
+<p>通过像类似Sparrow/Reeder/Evernote的三栏式界面来管理组织Markup文件，实时更新显示HTML输出页面。</p>
+<p>自动发布Jekyll/Octopress博客到GitHub/FarBox等。</p>
+</div>
+<div class="section" id="id3">
+<h1><a class="toc-backref" href="#id43">创作理念</a></h1>
+<ul>
+<li><p class="first">KISS</p>
+<blockquote>
+<p>KISS: Keep It Small and Simple</p>
+<p>Marboo只负责显示最终效果，其他的功能像编辑，生成HTML等都可以通过配置来调用程序完成，甚至像增加文件夹这样的操作都是调用Finder来实现的。</p>
+</blockquote>
+</li>
+<li><p class="first">内容和排版分离</p>
+<p>markdown等适合写内容，css适合排版。下面是一个markdown文件</p>
+</li>
+</ul>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"># 一颗开花的树<br/>## 席慕容<br/><br/>如何让你遇见我<br/>在我最美丽的时刻 为这<br/>我已在佛前 求了五百年<br/>求佛让我们结一段尘缘<br/><br/>佛于是把我化作一棵树<br/>长在你必经的路旁<br/>阳光下慎重地开满了花<br/>朵朵都是我前世的盼望<br/><br/>当你走近 请你细听<br/>那颤抖的叶是我等待的热情<br/>而当你终于无视地走过<br/>在你身后落了一地的<br/><br/>朋友啊 那不是花瓣<br/>那是我凋零的心<br/></pre></div>
+<p>最终的展示效果如下：</p>
+<img alt="/media/images/marboo/marboo-poem.png" src="/media/images/marboo/marboo-poem.png" />
+<p>关于Marboo的创作理念，还可以看我的 <a class="reference external" href="http://amoblin.marboo.biz/2012/12/25/MarkBook-release.html">这篇文章</a></p>
+</div>
+<div class="section" id="id5">
+<h1><a class="toc-backref" href="#id44">使用Marboo</a></h1>
+<p>首先看一下Gallery上的各种创意用法吧：<a class="reference external" href="http://marboo.biz/gallery/">Marboo Gallery</a></p>
+<div class="section" id="id6">
+<h2><a class="toc-backref" href="#id45">本地化支持</a></h2>
+<p>Marboo目前支持简体中文和英文。</p>
+</div>
+<div class="section" id="id7">
+<h2><a class="toc-backref" href="#id46">笔记管理</a></h2>
+<div class="section" id="id8">
+<h3><a class="toc-backref" href="#id47">新建笔记</a></h3>
+<p>键入 <strong>Control + N</strong> 或点击窗口上方标题栏中的图标 <img alt="new" src="/media/images/marboo/marboo-icon-new.png" style="width: 25px; height: 25px;" /> 来新建一个笔记，新建时需要指定笔记类型（自定义类型见 <a class="reference internal" href="#id28">管理代码</a> ）。</p>
+<p>注意如果稍后要通过jekyll发布的话，输入的笔记名称最好不要有中文。</p>
+<p>因为输入的名字会生成文件名，jekyll对中文文件名的支持不太好。</p>
+</div>
+<div class="section" id="id9">
+<h3><a class="toc-backref" href="#id48">编辑笔记</a></h3>
+<p>双击中栏笔记缩略图，会启动关联的外部编辑器(参见 <a class="reference internal" href="#id16">设置默认编辑器</a> )来编辑笔记。保存修改后，Marboo会同步更新内容。</p>
+<p>下面是c代码样例：</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">#include &lt;stdio.h&gt;</span><br/><br/><span style="color: #B00040">int</span> <span style="color: #0000FF">main</span>() {<br/>    <span style="color: #B00040">char</span><span style="color: #666666">*</span> a[<span style="color: #666666">3</span>];<br/>    <span style="color: #B00040">int</span> i;<br/>    a[<span style="color: #666666">0</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;你好&quot;</span>;<br/>    a[<span style="color: #666666">1</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;hello&quot;</span>;<br/>    a[<span style="color: #666666">2</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;world!&quot;</span>;<br/><br/>    printf(<span style="color: #BA2121">&quot;a&#39;s address is: %p</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>, a);<br/>    <span style="color: #008000; font-weight: bold">for</span>(i<span style="color: #666666">=0</span>; i<span style="color: #666666">&lt;3</span>; i<span style="color: #666666">++</span>) {<br/>        printf(<span style="color: #BA2121">&quot;%p: %s</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>, a[i], a[i]);<br/>    }<br/>}<br/></pre></div>
+</div>
+<div class="section" id="id10">
+<h3><a class="toc-backref" href="#id49">预览笔记</a></h3>
+<p>右栏实时更新生成的HTML页面，若要同时浏览多个页面，点击 <img alt="open" src="/media/images/marboo/marboo-icon-open.png" style="width: 25px; height: 25px;" /> 来用默认浏览器打开当前页面。</p>
+</div>
+<div class="section" id="id11">
+<h3><a class="toc-backref" href="#id50">删除笔记</a></h3>
+<p>点击窗口上方标题栏中的图标 <img alt="delete" src="/media/images/marboo/marboo-icon-delete.png" style="width: 25px; height: 25px;" /> 或者右键调出菜单选择&quot;删除&quot;来删除笔记。</p>
+<p>或者键入 <strong>Delete</strong> 来删除笔记。</p>
+</div>
+<div class="section" id="id12">
+<h3><a class="toc-backref" href="#id51">刷新笔记缩略图</a></h3>
+<p>有时中栏缩略图可能显示为空白，或者是旧主题，这时可以右键点击缩略图，选 “刷新”。</p>
+</div>
+<div class="section" id="id13">
+<h3><a class="toc-backref" href="#id52">增加笔记本</a></h3>
+<p>双击左栏目录，会在Finder中显示该目录，然后创建文件夹即可，注意须遵循 <a class="reference internal" href="#id30">三层目录规范</a></p>
+</div>
+<div class="section" id="id14">
+<h3><a class="toc-backref" href="#id53">自动化操作</a></h3>
+<p>从MarBoo 0.4开始，增加了一个按钮 <img alt="make" src="/media/images/marboo/marboo-icon-make.png" style="width: 25px; height: 25px;" /> ,点击它会递归向上查找Makefile或Rakefile文件，然后执行。</p>
+</div>
+</div>
+<div class="section" id="id15">
+<h2><a class="toc-backref" href="#id54">Marboo偏好设置</a></h2>
+<div class="section" id="id16">
+<h3><a class="toc-backref" href="#id55">设置默认编辑器</a></h3>
+<p>点击 <img alt="config" src="/media/images/marboo/marboo-icon-preferences.png" style="width: 25px; height: 25px;" /> 或 键入[ <strong>Command + ,</strong> ] 来打开偏好设置，选择喜欢的编辑器即可。</p>
+</div>
+<div class="section" id="id17">
+<h3><a class="toc-backref" href="#id56">修改主题</a></h3>
+<p>点击 <img alt="theme" src="/media/images/marboo/marboo-icon-theme.png" style="width: 25px; height: 25px;" /> 来打开关联的css文件，通过修改css内容来控制所有笔记的外观。</p>
+</div>
+<div class="section" id="id18">
+<h3><a class="toc-backref" href="#id57">添加图片</a></h3>
+<p>写MarkDown或RST的同学是不是觉得载入图片的语法太麻烦了？使用Marboo，一切就这么简单：</p>
+<ol class="arabic simple">
+<li>点击 <img alt="import-images" src="/media/images/marboo/marboo-icon-import-images.png" style="width: 25px; height: 25px;" /> 来选择添加图片</li>
+<li>在编辑器中粘贴系统剪切板内容</li>
+</ol>
+<p>也可以这样：</p>
+<ol class="arabic simple">
+<li>双击左栏media文件夹下的bg-images或images目录，复制文件进去</li>
+<li>在中栏找到图片，右键选择&quot;复制该文件路径&quot;</li>
+<li>粘贴到css或markdown文件中即可</li>
+</ol>
+</div>
+</div>
+<div class="section" id="evernote">
+<h2><a class="toc-backref" href="#id58">Evernote相关</a></h2>
+<div class="section" id="id19">
+<h3><a class="toc-backref" href="#id59">导入Evernote笔记</a></h3>
+<p>支持将Evernote笔记导出的HTML导入Marboo。</p>
+<ol class="arabic simple">
+<li>Evernote菜单中选择 文件-&gt;导出所有笔记，保存格式为HTML</li>
+<li>File -&gt; Import Notes...，选中从Evernote中导出的文件夹，点击 open 导入</li>
+</ol>
+<p>如果要导入的文件比较多可能需要等待一些时间。</p>
+</div>
+</div>
+<div class="section" id="id20">
+<h2><a class="toc-backref" href="#id60">图片画廊展示</a></h2>
+<p>Marboo从0.4.1版开始增加了本地图片的画廊展示。Marboo下包含图片文件夹，会生成一个[folder name].gallery.html的文件。</p>
+<p>从而将文件夹下的图片在一个WEB页面上展示出来。当然，可以通过css来个性化定制。</p>
+</div>
+<div class="section" id="jekyll-octopress">
+<h2><a class="toc-backref" href="#id61">Jekyll/Octopress相关</a></h2>
+<div class="section" id="id21">
+<h3><a class="toc-backref" href="#id62">导入jekyll/Octopress博客</a></h3>
+<p>File -&gt; Import Notes...，选择jekyll或Octopress博客的_posts目录，即可将该目录下的博客文章导入到Marboo中。</p>
+</div>
+<div class="section" id="id22">
+<h3><a class="toc-backref" href="#id63">发布到jekyll/Octopress博客</a></h3>
+<p>由于amoblin主要使用rst来写文档，对rst比较熟悉，而md就不太熟悉，所以目前此功能仅支持rst格式。后续会加入md支持。</p>
+<p>如果在文件名为my-first-blog.rst的笔记中定义了如下内容：</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">.. <span style="color: #008000; font-weight: bold">|date|</span> <span style="color: #AA22FF; font-weight: bold">date</span>:: 2012-08-31<br/>.. <span style="color: #AA22FF; font-weight: bold">title</span>:: 博客标题<br/>.. <span style="color: #AA22FF; font-weight: bold">publish</span>:: YES<br/></pre></div>
+<p>就会在 <strong>~/.marboo/source/blogs/my_blog</strong> 目录下创建 2012-08-31-my-first-blog.rst的博客文件，publish为NO时删除上述文件。</p>
+<p>本文rst源文件第10行正是定义publish之处，现在值为NO，你可以试着修改为YES，保存，然后点blogs/my_blog看看，是不是出现了？</p>
+<p>jekyll/Octorpress用户可以把自己的_posts目录软链到上述目录。</p>
+<p>具体例子可以看我的文章：<a class="reference external" href="http://amoblin.marboo.biz/2012/12/26/markbook-to-jekyll.html">使用MarkBook发布博客到Jekyll</a></p>
+</div>
+<div class="section" id="id24">
+<h3><a class="toc-backref" href="#id64">一键发布博客</a></h3>
+<p>把jekyll生成html的命令和git推送的命令都写到Makefile或Rakefile里，放在博客目录下，这样发布博客是不是很方便了呢？</p>
+<p>用Marboo发布博客，就这么简单，详情点击 <a class="reference external" href="http://amoblin.puti.biz/2013/01/24/markbook-to-farbox.html">这里</a></p>
+</div>
+<div class="section" id="farbox">
+<h3><a class="toc-backref" href="#id65">发布到FarBox</a></h3>
+<p><a class="reference external" href="http://amoblin.puti.biz/2013/01/24/markbook-to-farbox.html">http://amoblin.puti.biz/2013/01/24/markbook-to-farbox.html</a></p>
+</div>
+</div>
+<div class="section" id="id26">
+<h2><a class="toc-backref" href="#id66">读书</a></h2>
+<div class="section" id="pro-git">
+<h3><a class="toc-backref" href="#id67">Pro Git</a></h3>
+<p>Git学习的经典著作Pro Git托管在GitHub上，以Creative Commons Attribution-Non Commercial-Share Alike 3.0 license发布。</p>
+<p>amoblin整理了Pro Git的源文件，使其符合Marboo的 <a class="reference internal" href="#id30">三层目录规范</a> ，发布在GitHub上。</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> git clone git@github.com:amoblin/progit-for-markbook.git ~/.marboo/source/progit-for-markbook<br/></pre></div>
+<p>重启Marboo后，就可以拜读Pro Git了。</p>
+</div>
+</div>
+<div class="section" id="web">
+<h2><a class="toc-backref" href="#id68">写WEB页面</a></h2>
+<p>Marboo的 <a class="reference external" href="http://marboo.biz/">主页</a> 就是借助它实现的，有图为证：</p>
+<img alt="/media/images/marboo/markbook-self-generate.png" src="/media/images/marboo/markbook-self-generate.png" style="height: 600px;" />
+</div>
+<div class="section" id="id28">
+<h2><a class="toc-backref" href="#id69">管理代码</a></h2>
+<p>新建笔记，笔记标题输入程序名，比如hello.py，笔记类型选择最下面的“自定义”，这样生成的文件就不会再添加额外的后缀名了。</p>
+<p>粘贴代码进去，保存，Marboo会高亮显示代码。</p>
+<p>如果显示内容为：Unknown type of file: [filename]。那么说明Marboo不能识别文件的MIME类型。</p>
+<p>这时候可以通过 <a class="reference internal" href="#id33">增加笔记格式</a> 来扩展。</p>
+</div>
+</div>
+<div class="section" id="id29">
+<h1><a class="toc-backref" href="#id70">Marboo目录组织</a></h1>
+<p>Marboo的主目录为~/.Marboo，下面有2个目录：</p>
+<ul class="simple">
+<li>build         用来存放生成的HTML文件</li>
+<li>source        源文件</li>
+</ul>
+<div class="section" id="source">
+<h2><a class="toc-backref" href="#id71">source目录</a></h2>
+<p>source目录下3层之内(包括第三层)的目录/文件都会被Marboo管理。</p>
+<div class="section" id="id30">
+<h3><a class="toc-backref" href="#id72">三层目录规范</a></h3>
+<p>source目录下有三层：</p>
+<p>第一层(MyNotes.localized)是笔记本库，一般也是一个git库(Marboo会忽略.git目录)。</p>
+<p>第二层(marboo-doc)是笔记本，用于存放各种分类的笔记。</p>
+<p>第三层(README.rst)是笔记(或图片文件夹)</p>
+<p>凡是符合上述要求的文件/目录都会被Marboo识别，source目录下的任何改变都会被Marboo捕获，从而更新用户界面。</p>
+<p>典型的3层目录树结构如下：</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #808080">source</span><br/><span style="color: #808080">└── MyNotes.localized</span><br/><span style="color: #808080">    └── marboo-doc</span><br/><span style="color: #808080">        └── README.rst</span><br/></pre></div>
+</div>
+<div class="section" id="media">
+<h3><a class="toc-backref" href="#id73">media目录</a></h3>
+<p>source目录下默认有一个名为media的目录，Marboo的主题样式表、初始化文件模板等存放在这里。</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> ls media<br/><span style="color: #808080">bg-images  bin        css        file_types images     templates</span><br/></pre></div>
+<ul class="simple">
+<li>bg-images     背景图片</li>
+<li>bin           生成html的脚本</li>
+<li>css           存放主题样式表</li>
+<li>file_types    存放初始化文件模板</li>
+<li>images        存放笔记文档中的图片</li>
+<li>templates     生成html后外嵌HTML模板</li>
+</ul>
+<p>其中 bin/mkldir 是用来创建本地化目录的脚本，上面的MyNotes.localized正是用此创建。(参看 <a class="reference external" href="http://amoblin.marboo.biz/2013/01/10/create-localized-directory-on-os-x.html">Mac下创建本地化目录</a>)</p>
+</div>
+</div>
+<div class="section" id="build">
+<h2><a class="toc-backref" href="#id74">build目录</a></h2>
+<p>存放source目录生成的HTML等文件，结构上基本和source保持一致，但多出来一个bootstrap目录。</p>
+<p>这个bootstrap就是著名的twitter bootstrap，Marboo在引入HTML笔记支持时选择了twitter bootstrap。</p>
+</div>
+</div>
+<div class="section" id="id31">
+<h1><a class="toc-backref" href="#id75">Marboo进阶</a></h1>
+<p>Marboo通过CSS来控制笔记的显示效果。</p>
+<p>可以配置不同内容的CSS来生成不同的显示版式。相同显示版式的笔记使用相同的二级后缀名，比如</p>
+<ul class="simple">
+<li>我的日记.diary.md     版式为diary的markdown格式笔记</li>
+<li>志摩的诗.poetry.md    版式为poetry的markdown格式笔记</li>
+</ul>
+<p>这样虽然同为markdown文件，使用同一个HTML生成器，但是可以在初始化和最终生成HTML的时候，采取不同的行为。</p>
+<div class="section" id="id32">
+<h2><a class="toc-backref" href="#id76">修改初始化文件内容</a></h2>
+<p>在 <a class="reference internal" href="#id8">新建笔记</a> 时，输入笔记名，点击 ‘创建’ 后会生成一个笔记，打开笔记会发现里面已经有内容了，这些内容就是从 media/file_types目录下的文件初始化而来的。</p>
+<p>该目录结构如下：</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> ls file_types<br/><span style="color: #808080">default.html default.md   default.rst  poetry.md</span><br/></pre></div>
+<p>默认版式的笔记会使用名为default的同格式文件来初始化，而特定版式的笔记会使用对应版式名的同格式文件来初始化。</p>
+<p>比如新建一个笔记名为 new.peotry 的MarkDown格式笔记，会使用 poetry.md文件来初始化内容。</p>
+<p>通过在此目录添加文件&quot;版式名.格式名&quot;来增加版式。</p>
+<div class="section" id="rst">
+<h3><a class="toc-backref" href="#id77">rst文件初始化</a></h3>
+<p>默认的rst文件初始化内容如下</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">%@<br/>%@<br/>%@<br/><br/><span style="color: #BC7A00">.. Author: your_name</span><br/>.. <span style="color: #AA22FF; font-weight: bold">title</span>:: 可以是中文名<br/>.. <span style="color: #008000; font-weight: bold">|date|</span> <span style="color: #AA22FF; font-weight: bold">date</span>:: %@<br/>.. <span style="color: #AA22FF; font-weight: bold">publish</span>:: NO<br/></pre></div>
+<p>参数用 &quot;%&#64;&quot;表示， 一共4个参数。</p>
+<ul class="simple">
+<li>第2个参数是笔记名</li>
+<li>第1个和第3个是根据笔记名计算出来的 ‘=’ (RST语法要求)</li>
+<li>第4个参数是当前日期，主要用于生成jekyll格式的文件名。</li>
+</ul>
+</div>
+<div class="section" id="md">
+<h3><a class="toc-backref" href="#id78">md文件初始化</a></h3>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">%@<br/>%@<br/></pre></div>
+<ul class="simple">
+<li>第1个参数是笔记名</li>
+<li>第2个是创建时间。</li>
+</ul>
+</div>
+<div class="section" id="html">
+<h3><a class="toc-backref" href="#id79">html文件初始化</a></h3>
+<p>这个比较长，不在这里写了，可以打开 media/file_types下的default.html来看。</p>
+<p>3个参数：第1个是笔记名(title标签用)，第2个是创建时间，第3个还是笔记名(h1标签用)。</p>
+</div>
+</div>
+<div class="section" id="id33">
+<h2><a class="toc-backref" href="#id80">增加笔记格式</a></h2>
+<p>对Marboo没有内置的格式，可以在 media/bin 下编写shell脚本来增加支持。</p>
+<p>Marboo内置对markdown、rst的支持，但如果该目录下也有对应的HTML生成器，会优先使用该生成器来生成。</p>
+<p>比如下面的markdown.sh脚本，在生成的html末尾加上了一行文字：</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">#</span>!/bin/sh<br/><span style="color: #808080">echo &quot;`/usr/local/bin/markdown $1` &lt;br/&gt; generated by markdown.sh&quot;</span><br/></pre></div>
+<p>这样，后缀为markdown的文件，生成的html页面下面都会有这一行文字。</p>
+<p>也可以用二级版式来对特定版式的笔记做特定转化。</p>
+<div class="section" id="id34">
+<h3><a class="toc-backref" href="#id81">脚本输入输入接口规范</a></h3>
+<p>输入：1个参数，为源文件路径
+输出：到标准输出，为HTML内容</p>
+<p>Marboo通过管道获取脚本的输出来做进一步加工，所以请确保脚本一定要输出内容。</p>
+</div>
+</div>
+<div class="section" id="id35">
+<h2><a class="toc-backref" href="#id82">修改笔记HTML模板</a></h2>
+<p>在 media/templates 下保存文件输出模板。</p>
+<p>通过标准markdown生成的html文件是只有内容的，并没有html的外部框架，所以通过模板进行包装，从而能够应用css主题。</p>
+<p>默认有下面3个模板文件：</p>
+<ul>
+<li><dl class="first docutils">
+<dt>md.html</dt>
+<dd><p class="first last">*.md 笔记的输出模板</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>poetry.md.html</dt>
+<dd><p class="first last">*.peotry.md 笔记的输出模板</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>pygmentize.html</dt>
+<dd><p class="first last">程序文件的输出模板</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id36">
+<h1><a class="toc-backref" href="#id83">更新</a></h1>
+<div class="section" id="id37">
+<h2><a class="toc-backref" href="#id84">更新本手册</a></h2>
+<p>本文所在目录为一个git仓库，远程仓库地址为：</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> <span style="color: #008000">cd</span> ~/.marboo/source/MyNotes.localized/marboo-doc<br/><span style="color: #000080; font-weight: bold">$</span> git remote -v<br/><span style="color: #808080">origin      git@github.com:amoblin/marboo-doc.git (fetch)</span><br/><span style="color: #808080">origin      git@github.com:amoblin/marboo-doc.git (push)</span><br/></pre></div>
+<p>获取更新：</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> git pull<br/></pre></div>
+</div>
+<div class="section" id="id38">
+<h2><a class="toc-backref" href="#id85">更新本软件</a></h2>
+<p>菜单项：Marboo -&gt; Check for updates..</p>
+<p>或者至 <a class="reference external" href="http://code.google.com/p/markbook/downloads/list">Marboo的下载页</a></p>
+<p>Marboo在发布新版软件前会先更新用户手册，所以如果你想第一时间知道Marboo的动态的话，</p>
+<p>可以去 <a class="reference external" href="https://github.com/marboo/marboo-doc">github上的marboo-doc项目</a> ，点watch，这样有新的版本发布，你就会收到邮件啦。</p>
+</div>
+</div>
+<div class="section" id="todo">
+<h1><a class="toc-backref" href="#id86">TODO</a></h1>
+<div class="section" id="open-folder-in-terminal">
+<h2><a class="toc-backref" href="#id87">open folder in terminal</a></h2>
+<p>在终端中打开文件夹，这样可以方便的进行一些操作。</p>
+</div>
+<div class="section" id="htmlmarkdown">
+<h2><a class="toc-backref" href="#id88">HTML转Markdown</a></h2>
+<p>这样导入的Evernote笔记就可以编辑了。</p>
+</div>
+<div class="section" id="id40">
+<h2><a class="toc-backref" href="#id89">更多的版式</a></h2>
+<p>谢谢你有耐心看到这里，说明我写的还不是太枯燥啊。Marboo刚接触WEB，不太熟悉。</p>
+<p>如果你有漂亮的CSS版式模板，用来实现特定的排版，比如中文竖排，日记，画廊（现在的比较丑）等，同时又愿意给大家分享的话，</p>
+<p>请联系 <a class="reference external" href="mailto:amoblin&#64;gmail.com">amoblin&#64;gmail.com</a> ，在下一版本里amoblin会添加进来。</p>
+</div>
+</div>
+</div>
+</body>
+</html>
