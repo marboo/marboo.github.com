@@ -141,7 +141,7 @@
 <p>欢迎您使用Marboo，目前版本为 v0.5</p>
 <p>查看新增了什么功能： <a class="reference external" href="https://github.com/marboo/marboo-doc/commits/master">https://github.com/marboo/marboo-doc/commits/master</a></p>
 <p>也可以在本地执行下面的操作：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> <span style="color: #008000">cd</span> ~/.marboo/source/MyNotes.localized/marboo-doc<br/><span style="color: #000080; font-weight: bold">$</span> git log -p<br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%">$ cd ~/.marboo/source/MyNotes.localized/marboo-doc<br/>$ git log -p<br/></pre></div>
 </div>
 <div class="section" id="id2">
 <h1><a class="toc-backref" href="#id56">Marboo是什么？</a></h1>
@@ -162,15 +162,15 @@
 <li>作为HTML显示内容的</li>
 </ul>
 <p>比如，一个python脚本，内容如下：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #408080; font-style: italic">#!/usr/bin/python</span><br/><span style="color: #408080; font-style: italic"># -*- coding:utf-8 -*-</span><br/><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">sys</span><br/><span style="color: #008000; font-weight: bold">print</span> <span style="color: #BA2121">&quot;你好&quot;</span><br/><span style="color: #008000; font-weight: bold">print</span> <span style="color: #BA2121">&#39;&lt;a href=&quot;http://marboo.biz&quot;&gt;marboo主页&lt;/a&gt;&#39;</span><br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%"><span style="color: #408080; font-style: italic">#!/usr/bin/python</span><br/><span style="color: #408080; font-style: italic"># -*- coding:utf-8 -*-</span><br/><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">sys</span><br/><span style="color: #008000; font-weight: bold">print</span> <span style="color: #BA2121">&quot;你好&quot;</span><br/><span style="color: #008000; font-weight: bold">print</span> <span style="color: #BA2121">&#39;&lt;a href=&quot;http://marboo.biz&quot;&gt;marboo主页&lt;/a&gt;&#39;</span><br/></pre></div>
 <p>作为输入，它是一个python脚本文件，可以通过上述语法高亮来显示内容。</p>
 <p>处理脚本就很简单了：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #408080; font-style: italic">#!/bin/sh</span><br/>python <span style="color: #19177C">$1</span><br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%"><span style="color: #408080; font-style: italic">#!/bin/sh</span><br/>python <span style="color: #19177C">$1</span><br/></pre></div>
 <p>简单地将python脚本执行即可。这是一个shell脚本，通过语法高亮来显示。</p>
 <p>输出结果是这样：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #808080">你好</span><br/><span style="color: #808080">&lt;a href=&quot;http://marboo.biz&quot;&gt;marboo主页&lt;/a&gt;</span><br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%"><span style="color: #808080">你好</span><br/><span style="color: #808080">&lt;a href=&quot;http://marboo.biz&quot;&gt;marboo主页&lt;/a&gt;</span><br/></pre></div>
 <p>使用语法高亮后是这样：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">你好<br/><span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;http://marboo.biz&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>marboo主页<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span><br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%">你好<br/><span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;http://marboo.biz&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>marboo主页<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span><br/></pre></div>
 <p>而作为HTML内容来显示的话，是这样的：</p>
 <p>你好 <a class="reference external" href="http://marboo.biz">marboo</a></p>
 <p>这里有上述示例的演示视频：<a class="reference external" href="http://v.youku.com/v_show/id_XNTExMjk0MTg0.html">http://v.youku.com/v_show/id_XNTExMjk0MTg0.html</a></p>
@@ -269,7 +269,7 @@
 <div class="section" id="md">
 <h3><a class="toc-backref" href="#id68">md格式</a></h3>
 <p>初始化文件（内容在/media/file_types/default.init.md）：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"># %@<br/>&lt;!--<br/>    modify /media/file_types/default.md to change the init content of *.md files.<br/>--&gt;<br/><br/>%@<br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%"># %@<br/>&lt;!--<br/>    modify /media/file_types/default.md to change the init content of *.md files.<br/>--&gt;<br/><br/>%@<br/></pre></div>
 <p>其中有两个参数，用 %&#64; 表示。</p>
 <ul class="simple">
 <li>第１个代表文件名</li>
@@ -289,7 +289,7 @@
 </ul>
 <p>转换脚本： Marboo内置的rst2html.py。</p>
 <p>输出模板：无。（rst比较特殊，直接输出全部html）</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">%@<br/>%@<br/>%@<br/><br/><span style="color: #BC7A00">.. modify /media/file_types/default.rst to change the init content of *.rst files.</span><br/><span style="color: #BC7A00">.. Author: your_name</span><br/>.. <span style="color: #AA22FF; font-weight: bold">title</span>:: this is the real title in Jekyll.<br/>.. <span style="color: #008000; font-weight: bold">|date|</span> <span style="color: #AA22FF; font-weight: bold">date</span>:: %@<br/>.. <span style="color: #AA22FF; font-weight: bold">publish</span>:: NO<br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%">%@<br/>%@<br/>%@<br/><br/><span style="color: #BC7A00">.. modify /media/file_types/default.rst to change the init content of *.rst files.</span><br/><span style="color: #BC7A00">.. Author: your_name</span><br/>.. <span style="color: #AA22FF; font-weight: bold">title</span>:: this is the real title in Jekyll.<br/>.. <span style="color: #008000; font-weight: bold">|date|</span> <span style="color: #AA22FF; font-weight: bold">date</span>:: %@<br/>.. <span style="color: #AA22FF; font-weight: bold">publish</span>:: NO<br/></pre></div>
 <p>一共4个参数。</p>
 <ul class="simple">
 <li>第2个参数是笔记名</li>
@@ -309,7 +309,7 @@
 </ul>
 <p>转换脚本：使用系统cat命令，原样输出。</p>
 <p>输出模板：html.template.html，只有１行：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">%@<br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%">%@<br/></pre></div>
 </div>
 </div>
 <div class="section" id="id13">
@@ -375,7 +375,7 @@
 <p>markdown等适合写内容，css适合排版。下面是一个markdown文件</p>
 </li>
 </ul>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"># 一颗开花的树<br/>## 席慕容<br/><br/>如何让你遇见我<br/>在我最美丽的时刻 为这<br/>我已在佛前 求了五百年<br/>求佛让我们结一段尘缘<br/><br/>佛于是把我化作一棵树<br/>长在你必经的路旁<br/>阳光下慎重地开满了花<br/>朵朵都是我前世的盼望<br/><br/>当你走近 请你细听<br/>那颤抖的叶是我等待的热情<br/>而当你终于无视地走过<br/>在你身后落了一地的<br/><br/>朋友啊 那不是花瓣<br/>那是我凋零的心<br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%"># 一颗开花的树<br/>## 席慕容<br/><br/>如何让你遇见我<br/>在我最美丽的时刻 为这<br/>我已在佛前 求了五百年<br/>求佛让我们结一段尘缘<br/><br/>佛于是把我化作一棵树<br/>长在你必经的路旁<br/>阳光下慎重地开满了花<br/>朵朵都是我前世的盼望<br/><br/>当你走近 请你细听<br/>那颤抖的叶是我等待的热情<br/>而当你终于无视地走过<br/>在你身后落了一地的<br/><br/>朋友啊 那不是花瓣<br/>那是我凋零的心<br/></pre></div>
 <p>最终的展示效果如下：</p>
 <img alt="/media/images/marboo/marboo-poem.png" src="/media/images/marboo/marboo-poem.png" />
 <p>关于Marboo的创作理念，还可以看我的 <a class="reference external" href="http://amoblin.marboo.biz/2012/12/25/MarkBook-release.html">这篇文章</a></p>
@@ -387,7 +387,7 @@
 <h2><a class="toc-backref" href="#id83">笔记管理</a></h2>
 <div class="section" id="id20">
 <h3><a class="toc-backref" href="#id84">新建笔记</a></h3>
-<p>键入 <strong>Control + N</strong> 或点击窗口上方标题栏中的图标 <img alt="new" src="/media/images/marboo/marboo-icon-new.png" style="width: 25px; height: 25px;" /> 来新建一个笔记，新建时需要指定笔记类型（自定义类型见 <a class="reference internal" href="#id43">管理代码</a> ）。</p>
+<p>键入 <span class="kbd">Control + N</span> 或点击窗口上方标题栏中的图标 <img alt="new" src="/media/images/marboo/marboo-icon-new.png" style="width: 25px; height: 25px;" /> 来新建一个笔记，新建时需要指定笔记类型（自定义类型见 <a class="reference internal" href="#id43">管理代码</a> ）。</p>
 <p>注意如果稍后要通过jekyll发布的话，输入的笔记名称最好不要有中文。</p>
 <p>因为输入的名字会生成文件名，jekyll对中文文件名的支持不太好。</p>
 </div>
@@ -395,7 +395,7 @@
 <h3><a class="toc-backref" href="#id85">编辑笔记</a></h3>
 <p>双击中栏笔记缩略图，会启动关联的外部编辑器(参见 <a class="reference internal" href="#id28">设置默认编辑器</a> )来编辑笔记。保存修改后，Marboo会同步更新内容。</p>
 <p>下面是c代码样例：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">#include &lt;stdio.h&gt;</span><br/><br/><span style="color: #B00040">int</span> <span style="color: #0000FF">main</span>() {<br/>    <span style="color: #B00040">char</span><span style="color: #666666">*</span> a[<span style="color: #666666">3</span>];<br/>    <span style="color: #B00040">int</span> i;<br/>    a[<span style="color: #666666">0</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;你好&quot;</span>;<br/>    a[<span style="color: #666666">1</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;hello&quot;</span>;<br/>    a[<span style="color: #666666">2</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;world!&quot;</span>;<br/><br/>    printf(<span style="color: #BA2121">&quot;a&#39;s address is: %p</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>, a);<br/>    <span style="color: #008000; font-weight: bold">for</span>(i<span style="color: #666666">=0</span>; i<span style="color: #666666">&lt;3</span>; i<span style="color: #666666">++</span>) {<br/>        printf(<span style="color: #BA2121">&quot;%p: %s</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>, a[i], a[i]);<br/>    }<br/>}<br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%"><span style="color: #BC7A00">#include &lt;stdio.h&gt;</span><br/><br/><span style="color: #B00040">int</span> <span style="color: #0000FF">main</span>() {<br/>    <span style="color: #B00040">char</span><span style="color: #666666">*</span> a[<span style="color: #666666">3</span>];<br/>    <span style="color: #B00040">int</span> i;<br/>    a[<span style="color: #666666">0</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;你好&quot;</span>;<br/>    a[<span style="color: #666666">1</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;hello&quot;</span>;<br/>    a[<span style="color: #666666">2</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;world!&quot;</span>;<br/><br/>    printf(<span style="color: #BA2121">&quot;a&#39;s address is: %p</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>, a);<br/>    <span style="color: #008000; font-weight: bold">for</span>(i<span style="color: #666666">=0</span>; i<span style="color: #666666">&lt;3</span>; i<span style="color: #666666">++</span>) {<br/>        printf(<span style="color: #BA2121">&quot;%p: %s</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>, a[i], a[i]);<br/>    }<br/>}<br/></pre></div>
 </div>
 <div class="section" id="id22">
 <h3><a class="toc-backref" href="#id86">预览笔记</a></h3>
@@ -520,7 +520,7 @@
 <h3><a class="toc-backref" href="#id112">发布到jekyll/Octopress博客</a></h3>
 <p>由于amoblin主要使用rst来写文档，对rst比较熟悉，而md就不太熟悉，所以目前此功能仅支持rst格式。后续会加入md支持。</p>
 <p>如果在文件名为my-first-blog.rst的笔记中定义了如下内容：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">.. <span style="color: #008000; font-weight: bold">|date|</span> <span style="color: #AA22FF; font-weight: bold">date</span>:: 2012-08-31<br/>.. <span style="color: #AA22FF; font-weight: bold">title</span>:: 博客标题<br/>.. <span style="color: #AA22FF; font-weight: bold">publish</span>:: YES<br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%">.. <span style="color: #008000; font-weight: bold">|date|</span> <span style="color: #AA22FF; font-weight: bold">date</span>:: 2012-08-31<br/>.. <span style="color: #AA22FF; font-weight: bold">title</span>:: 博客标题<br/>.. <span style="color: #AA22FF; font-weight: bold">publish</span>:: YES<br/></pre></div>
 <p>就会在 <strong>~/.marboo/source/blogs/my_blog</strong> 目录下创建 2012-08-31-my-first-blog.rst的博客文件，publish为NO时删除上述文件。</p>
 <p>本文rst源文件第10行正是定义publish之处，现在值为NO，你可以试着修改为YES，保存，然后点blogs/my_blog看看，是不是出现了？</p>
 <p>jekyll/Octorpress用户可以把自己的_posts目录软链到上述目录。</p>
@@ -543,7 +543,7 @@
 <h3><a class="toc-backref" href="#id116">Pro Git</a></h3>
 <p>Git学习的经典著作Pro Git托管在GitHub上，以Creative Commons Attribution-Non Commercial-Share Alike 3.0 license发布。</p>
 <p>amoblin整理了Pro Git的源文件，发布在GitHub上。</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> git clone git@github.com:amoblin/progit-for-markbook.git ~/.marboo/source/progit-for-markbook<br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> git clone git@github.com:amoblin/progit-for-markbook.git ~/.marboo/source/progit-for-markbook<br/></pre></div>
 </div>
 </div>
 <div class="section" id="web">
@@ -574,7 +574,7 @@
 <h3><a class="toc-backref" href="#id121">media目录</a></h3>
 <p>source目录下默认有一个名为media的目录，Marboo的核心文件都放在这里。</p>
 <p>主题样式表、初始化文件模板等存放在这里。</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> ls media<br/><span style="color: #808080">bg-images  bin        css        file_types images     templates</span><br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> ls media<br/><span style="color: #808080">bg-images  bin        css        file_types images     templates</span><br/></pre></div>
 <ul class="simple">
 <li>bg-images     背景图片</li>
 <li>bin           转化脚本</li>
@@ -605,7 +605,7 @@
 <h2><a class="toc-backref" href="#id124">修改初始化文件内容</a></h2>
 <p>在 <a class="reference internal" href="#id20">新建笔记</a> 时，输入笔记名，点击 ‘创建’ 后会生成一个笔记，打开笔记会发现里面已经有内容了，这些内容就是从 media/file_types目录下的文件初始化而来的。</p>
 <p>该目录结构如下：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> ls file_types<br/><span style="color: #808080">default.init.html default.init.md   default.init.rst  poem.init.md</span><br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">$</span> ls file_types<br/><span style="color: #808080">default.init.html default.init.md   default.init.rst  poem.init.md</span><br/></pre></div>
 <p>默认版式的笔记会使用名为default的同格式文件来初始化，而特定版式的笔记会使用对应版式名的同格式文件来初始化。</p>
 <p>比如新建一个笔记名为 new.peom 的MarkDown格式笔记，会使用 poem.init.md文件来初始化内容。</p>
 <p>通过在此目录添加文件&quot;版式名.init.格式名&quot;来增加版式。</p>
@@ -615,7 +615,7 @@
 <p>对Marboo没有内置的格式，可以在 media/bin 下编写shell脚本来增加支持。</p>
 <p>Marboo内置对markdown、rst的支持，但如果该目录下也有对应的HTML生成器，会优先使用该生成器来生成。</p>
 <p>比如下面的markdown.sh脚本，在生成的html末尾加上了一行文字：</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">#</span>!/bin/sh<br/><span style="color: #808080">echo &quot;`/usr/local/bin/markdown $1` &lt;br/&gt; generated by markdown.sh&quot;</span><br/></pre></div>
+<div class="highlight"><pre style="line-height: 125%"><span style="color: #000080; font-weight: bold">#</span>!/bin/sh<br/><span style="color: #808080">echo &quot;`/usr/local/bin/markdown $1` &lt;br/&gt; generated by markdown.sh&quot;</span><br/></pre></div>
 <p>这样，后缀为markdown的文件，生成的html页面下面都会有这一行文字。</p>
 <p>也可以用二级版式来对特定版式的笔记做特定转化。</p>
 <div class="section" id="id48">
