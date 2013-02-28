@@ -1,140 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Marboo for Mac </title>
-        <meta charset="utf-8">
-        <!-- Bootstrap -->
-        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link rel="stylesheet" href="/media/css/base.css" type="text/css">
-        <link href="/media/css/ruhoh.css" rel="stylesheet" media="screen">
-        <link href="/media/css/style.css" rel="stylesheet" media="screen">
-        <link href="/media/css/sunburst-custom.css" rel="stylesheet" media="screen">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="/bootstrap/js/bootstrap.min.js"></script>
-    </head>
-    <body style="background-color:transparent">
-        <div class="navbar">
-            <div class="navbar-inner" style="background:#F0F0D8; box-shadow: 0 0 0 0; border-bottom:1px solid #E0E4CC">
-                <a class="brand" href="/">Marboo</a>
-                <ul class="nav">
-                    <li><a href="/guide/">用户手册</a></li>
-                    <li><a href="/gallery/">玩法</a></li>
-                </ul>
-                <div class="nav btn-group pull-right">
-                    <a class="btn btn-small dropdown-toggle" style="margin-top:8px; margin-right:4px" data-toggle="dropdown" href="#">简体中文<span class="caret"></span> </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="/">English</a></li>
-                    </ul>
-                </div>
-                <ul class="nav social pull-right">
-                    <li><a href="http://amoblin.marboo.biz/">博客</a></li>
-                    <li><a href="http://weibo.com/amoblin" class="twitter-follow-button" data-show-count="false" data-lang="en">微博</a></li>
-                    <li><a href="https://twitter.com/amoblin" class="twitter-follow-button" data-show-count="false" data-lang="en">Twitter</a></li>
-                    <li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://marboo.biz" data-hashtags="Marboo" data-text="new markdown notes manager for the hack using OS X">Tweet</a></li>
-                </ul>
-            </div>
+  <head>
+    <title> Marboo for Mac </title>
+    <meta charset="utf-8">
+    <!-- Bootstrap-->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="/media/css/base.css" type="text/css">
+    <link href="/media/css/ruhoh.css" rel="stylesheet" media="screen">
+    <link href="/media/css/style.css" rel="stylesheet" media="screen">
+    <link href="/media/css/sunburst-custom.css" rel="stylesheet" media="screen">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body style="background-color: transparent;">
+    <div class="navbar">
+      <div style="background: #F0F0D8; box-shadow: 0 0 0 0; border-bottom: 1px solid #E0E4CC;" class="navbar-inner"><a href="/" class="brand">Marboo</a>
+        <ul class="nav">
+          <li><a href="/guide/">用户手册</a></li>
+          <li><a href="/gallery/">玩法</a></li>
+        </ul>
+        <div class="nav btn-group pull-right"><a style="margin-top: 8px; margin-right: 4px;" data-toggle="dropdown" href="#" class="btn btn-small dropdown-toggle">简体中文<span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="/">English</a></li>
+          </ul>
         </div>
-        <div class="container" style="position:relative; top:50px">
-            <div class="content">
-                <div align="center">
-                </div>
-                <div class="row">
-                    <div class="span8 offset2">
-                    <h2 class="splash-header">还在为Evernote不支持Markdown，Git，Vim而烦恼吗？</h2>
-                                <p style="margin-bottom:20px">
-                                <strong>Marboo</strong> 是 <b>最好的</b> 平台式个人知识管理软件。<br/>
-                                使用Marboo，你可以：记笔记，发文章，写Web页面，管理代码。而这一切，基于如下2个设计理念：<br/>
-                                使用MVC，将内容和表现分离，使用Markdown等置标语言书写内容，用css+js写成的各种模板来做排版显示。<br/>
-                                遵循UNIX的KISS哲学，根据用户配置，Marboo调用外部软件来完成各部分的工作：
-                                </p>
-                        观看演示视频 <a href="https://vimeo.com/58428246">@vimeo</a> 或 <a href="http://v.youku.com/v_show/id_XNTA4MzgyMzQ4.html">@优酷</a>
-                    </div>
-                </div>
-
-                <div class="row splash stripe">
-                    <div class="span6 splash-message">
-                        <div class="wrapper" style="padding:20px">
-                            <table class="table-condensed" style="margin:0; width:100%">
-                                <tbody>
-                                    <tr>
-                                        <td><i class="icon-ok-sign"></i> <strong>Markdown</strong></td>
-                                        <td>记笔记(<a href="guide/index.html.html#markdown">其他格式？</a>)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="icon-ok-sign"></i> <strong>Vim/Emacs</strong></td>
-                                        <td>编辑内容</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="icon-ok-sign"></i> <strong>HTML</strong></td>
-                                        <td>输出模板</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="icon-ok-sign"></i> <strong>Shell Scripts</strong></td>
-                                        <td>自定义转化脚本</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="icon-ok-sign"></i> <strong>Git</strong></td>
-                                        <td>版本控制，内容同步</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="icon-ok-sign"></i> <strong>Jekyll</strong></td>
-                                        <td>发布博客</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="icon-ok-sign"></i> <strong>Make/Rake</strong></td>
-                                        <td>自动化</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="icon-ok-sign"></i> <strong>命令行</strong></td>
-                                        <td>实时反馈命令行的操作</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="icon-ok-sign"></i> <strong>无穷的扩展</strong></td>
-                                        <td>参看<a href="/guide/#id45">配置</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="span6 splash-message">
-                        <div id="themeStep1">
-                            <a href="gallery/" />
-                                <img src="/media/images/marboo/marboo-main.png" />
-                        </a>
-                        </div>
-
-                        <div class="download">
-                            <a class="download-button" href="http://markbook.googlecode.com/files/Marboo_v0.5.dmg">
-                                <span class="inner">
-                                    <h4>Download the latest</h4>
-                                    <p id="current-version-description">v0.5 February 5th 2013</p>
-                                </span>
-                            </a>
-                            <p class="requirements">OS X 10.7+</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br/>
-        <br/>
-        <footer class="footer" style="text-align:center; margin:50px 0">
-        @2013 amoblin. 版权所有. 由<a href="http://marboo.biz"> Marboo</a>
-        和<a href="http://twitter.github.com/bootstrap/"> Twitter Bootstrap </a>强力驱动
-        </footer>
-        <script type="text/javascript">
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-37860016-1']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-             })();
-
-        </script>
+        <ul class="nav social pull-right">
+          <li><a href="http://amoblin.marboo.biz/">博客</a></li>
+          <li><a href="http://weibo.com/amoblin" data-show-count="false" data-lang="en" class="twitter-follow-button">微博</a></li>
+          <li><a href="https://twitter.com/amoblin" data-show-count="false" data-lang="en" class="twitter-follow-button">Twitter</a></li>
+          <li><a href="https://twitter.com/share" data-lang="en" data-url="http://marboo.biz" data-hashtags="Marboo" data-text="new markdown notes manager for the hack using OS X" class="twitter-share-button">Tweet</a></li>
+        </ul>
+      </div>
     </div>
-</body>
+    <div style="position: relative; top: 50px;" class="container">
+      <div class="content">
+        <div align="center"></div>
+        <div class="row">
+          <div class="span8 offset2">
+            <h2 class="splash-header">还在为Evernote不支持Markdown，Git，Vim而烦恼吗？</h2>
+            <p style="margin-bottom: 20px;"><strong>Marboo</strong>是<b>最好的</b>平台式个人知识管理软件。<br>使用Marboo，你可以：记笔记，发文章，写Web页面，管理代码。而这一切，基于如下2个设计理念：<br>使用MVC，将内容和表现分离，使用Markdown等置标语言书写内容，用css+js写成的各种模板来做排版显示。<br>遵循UNIX的KISS哲学，根据用户配置，Marboo调用外部软件来完成各部分的工作：</p>观看演示视频<a href="https://vimeo.com/58428246">@vimeo</a>或<a href="http://v.youku.com/v_show/id_XNTA4MzgyMzQ4.html">@优酷</a>
+          </div>
+        </div>
+        <div class="row splash stripe">
+          <div class="span6 splash-message">
+            <div style="padding: 20px;" class="wrapper">
+              <table style="margin: 0; width: 100%;" class="table-condensed">
+                <tbody>
+                  <tr>
+                    <td><i class="icon-ok-sign"></i><strong>Markdown</strong></td>
+                    <td>记笔记(<a href="guide/index.html.html#markdown">其他格式？</a>)</td>
+                  </tr>
+                  <tr>
+                    <td><i class="icon-ok-sign"></i><strong>Vim/Emacs</strong></td>
+                    <td>编辑内容</td>
+                  </tr>
+                  <tr>
+                    <td><i class="icon-ok-sign"></i><strong>HTML</strong></td>
+                    <td>输出模板</td>
+                  </tr>
+                  <tr>
+                    <td><i class="icon-ok-sign"></i><strong>Shell Scripts</strong></td>
+                    <td>自定义转化脚本</td>
+                  </tr>
+                  <tr>
+                    <td><i class="icon-ok-sign"></i><strong>Git</strong></td>
+                    <td>版本控制，内容同步</td>
+                  </tr>
+                  <tr>
+                    <td><i class="icon-ok-sign"></i><strong>Jekyll</strong></td>
+                    <td>发布博客</td>
+                  </tr>
+                  <tr>
+                    <td><i class="icon-ok-sign"></i><strong>Make/Rake</strong></td>
+                    <td>自动化</td>
+                  </tr>
+                  <tr>
+                    <td><i class="icon-ok-sign"></i><strong>命令行</strong></td>
+                    <td>实时反馈命令行的操作</td>
+                  </tr>
+                  <tr>
+                    <td><i class="icon-ok-sign"></i><strong>无穷的扩展</strong></td>
+                    <td>参看<a href="/guide/#id45">配置</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="span6 splash-message">
+            <div id="themeStep1"><a href="gallery/"></a><img src="/media/images/marboo/marboo-main.png"></div>
+            <div class="download"><a href="http://markbook.googlecode.com/files/Marboo_v0.5.dmg" class="download-button"><span class="inner">
+                  <h4>Download the latest</h4>
+                  <p id="current-version-description">v0.5 February 5th 2013</p></span></a>
+              <p class="requirements">OS X 10.7+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+    <footer style="text-align: center; margin: 50px 0;" class="footer">@2013 amoblin. 版权所有. 由<a href="http://marboo.biz"> Marboo</a>和<a href="http://twitter.github.com/bootstrap/"> Twitter Bootstrap </a>强力驱动</footer>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37860016-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
 </html>

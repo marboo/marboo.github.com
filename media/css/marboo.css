@@ -1,10 +1,8 @@
 body {
-    /*
-    background:url("../bg-images/marboo-青.png");
-    background:url("/media/bg-images/marboo-apple.png");
-    background:url("/media/bg-images/marboo-wood.jpg");
-    background:url("../bg-images/marboo-Reeder-Noise.png");
-    */
+    //background:url("../bg-images/marboo-青.png");
+    //background:url("/media/bg-images/marboo-apple.png");
+    //background:url("/media/bg-images/marboo-wood.jpg");
+    //background:url("../bg-images/marboo-Reeder-Noise.png");
     background:url("../bg-images/marboo-灰.jpg");
     /* color:#ffffff; */
     font-size: 14px;
@@ -25,10 +23,12 @@ body {
  }
 
 pre.literal-block, pre.doctest-block, div.highlight > pre {
-    background-color: #ffffff;
+    //background: transparent;
+    //background-color: #ffffff;
+    trans
     display: inline-block;
     margin: 0 2em 0 2em;
     padding: 10px;
-    border: thin solid #AAF;
-    border-radius: .5em;
+    //border: thin solid #AAF;
+    //border-radius: .5em;
 }
