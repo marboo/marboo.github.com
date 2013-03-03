@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:wb="http://open.weibo.com/wb">
   <head>
-    <title> Marboo for Mac </title>
+    <title> Marboo - 自由书写</title>
     <meta charset="utf-8">
     <!-- Bootstrap-->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -9,6 +9,7 @@
     <link href="/media/css/ruhoh.css" rel="stylesheet" media="screen">
     <link href="/media/css/style.css" rel="stylesheet" media="screen">
     <link href="/media/css/sunburst-custom.css" rel="stylesheet" media="screen">
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=993231938" type="text/javascript" charset="utf-8"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
   </head>
@@ -26,7 +27,8 @@
         </div>
         <ul class="nav social pull-right">
           <li><a href="http://amoblin.marboo.biz/">博客</a></li>
-          <li><a href="http://weibo.com/amoblin" data-show-count="false" data-lang="en" class="twitter-follow-button">微博</a></li>
+          <li><wb:follow-button uid="1657760362" type="gray_1" width="67" height="24" ></wb:follow-button></li>
+          <li><wb:share-button appkey="993231938" ></wb:share-button></li>
           <li><a href="https://twitter.com/amoblin" data-show-count="false" data-lang="en" class="twitter-follow-button">Twitter</a></li>
           <li><a href="https://twitter.com/share" data-lang="en" data-url="http://marboo.biz" data-hashtags="Marboo" data-text="new markdown notes manager for the hack using OS X" class="twitter-share-button">Tweet</a></li>
         </ul>
@@ -48,7 +50,7 @@
                 <tbody>
                   <tr>
                     <td><i class="icon-ok-sign"></i><strong>Markdown</strong></td>
-                    <td>记笔记(<a href="guide/index.html.html#markdown">其他格式？</a>)</td>
+                    <td>记笔记(<a href="/guide/index.html#markdown">其他格式？</a>)</td>
                   </tr>
                   <tr>
                     <td><i class="icon-ok-sign"></i><strong>Vim/Emacs</strong></td>
@@ -87,11 +89,12 @@
             </div>
           </div>
           <div class="span6 splash-message">
-            <div id="themeStep1"><a href="gallery/"></a><img src="/media/images/marboo/marboo-main.png"></div>
+            <div id="themeStep1"><a href="gallery/"></a><img src="/media/images/marboo/marboo-blog.png"></div>
             <div class="download"><a href="http://markbook.googlecode.com/files/Marboo_v0.6.dmg" class="download-button"><span class="inner">
                   <h4>下载最新</h4>
                   <p id="current-version-description">v0.6 2013年3月5日</p></span></a>
-              <p class="requirements">OS X 10.7+</p>
+              <p class="requirements">OS X 10.7+</p><br><a href="http://markbook.googlecode.com/files/marboo_for_linux_v0.2.zip">
+                <Marboo>v0.2 for Linux</Marboo></a>
             </div>
           </div>
         </div>
