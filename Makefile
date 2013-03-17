@@ -9,6 +9,7 @@ default:
 	cp -r ../media/images/marboo ${dest}/media/images
 	cp -r ../media/images/bg/marboo* ${dest}/media/images/bg
 	cp -r ../media/css ${dest}/media
+	cp -r ../media/lib ${dest}/media
 	cp -r ~/.marboo/build/bootstrap ${dest}
 	#find .|grep index.html | xargs rm -f
 	find /tmp/marboo.biz|grep jade$$ |xargs rm -f
