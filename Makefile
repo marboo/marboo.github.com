@@ -2,6 +2,7 @@
 dest=/tmp/marboo.biz
 default:
 	cp ~/.marboo/build/misc/marboo-doc/README.rst.html guide/index.html
+	cp ~/.marboo/build/marboo/install.rst.html install-crx.html
 	find .|grep jade| xargs jade -P
 	/Users/amoblin/.rvm/gems/ruby-1.9.3-p125/bin/jekyll . ${dest}
 	cp .gitignore ${dest}
