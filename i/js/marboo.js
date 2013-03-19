@@ -79,6 +79,10 @@ Marboo.prototype.buildDemo = function() {
     "name": "一颗开花的树.md",
     "isDir": "0"
   });
+  files.push({
+    "name": "2011-12-29-jekyll-introduction.md",
+    "isDir": "0"
+  });
   return this.generateUl($("#treeView"), "", files);
 };
 
