@@ -64,7 +64,7 @@ Marboo.prototype.buildDemo = function() {
   var files;
   files = [];
   files.push({
-    "name": "Markdown语法说明.md",
+    "name": "markdown语法说明.md",
     "isDir": "0"
   });
   files.push({
@@ -72,15 +72,23 @@ Marboo.prototype.buildDemo = function() {
     "isDir": "0"
   });
   files.push({
-    "name": "样例笔记.md",
+    "name": "样例笔记.ace.md",
     "isDir": "0"
   });
   files.push({
-    "name": "一颗开花的树.md",
+    "name": "一颗开花的树.poem.md",
     "isDir": "0"
   });
   files.push({
     "name": "2011-12-29-jekyll-introduction.md",
+    "isDir": "0"
+  });
+  files.push({
+    "name": "hello-world.c",
+    "isDir": "0"
+  });
+  files.push({
+    "name": "hello-world.ace.py",
     "isDir": "0"
   });
   return this.generateUl($("#treeView"), "", files);
