@@ -49,13 +49,37 @@ String.prototype.endsWith = function(suffix) {
 
 Marboo = function() {
   this.current_url = "";
-  this.root = core().root;
+  if (core().valid) {
+    this.root = sprintf("file://%s", core().root);
+    this.initEvent();
+    this.buildTree();
+  } else {
+    this.root = "http://marboo.biz/i/build";
+    this.buildDemo();
+  }
   return this;
 };
 
-Marboo.prototype.init = function() {
-  this.initEvent();
-  return this.buildTree();
+Marboo.prototype.buildDemo = function() {
+  var files;
+  files = [];
+  files.push({
+    "name": "Markdown语法说明.md",
+    "isDir": "0"
+  });
+  files.push({
+    "name": "Markdown-Syntax.md",
+    "isDir": "0"
+  });
+  files.push({
+    "name": "样例笔记.md",
+    "isDir": "0"
+  });
+  files.push({
+    "name": "一颗开花的树.md",
+    "isDir": "0"
+  });
+  return this.generateUl($("#treeView"), "", files);
 };
 
 Marboo.prototype.initEvent = function() {
@@ -113,21 +137,21 @@ Marboo.prototype.onRefresh = function() {
   return document.getElementById('webView').src = current_url;
 };
 
-Marboo.prototype.getFolderTree = function() {
-  return core().getFolderTree();
-};
-
 Marboo.prototype.editFile = function(obj) {
   return core().editFile($(obj).attr("title"));
 };
 
 Marboo.prototype.buildTree = function() {
-  return this.generateUl($("#treeView"), '');
+  var files;
+  files = core().listDir("");
+  return this.generateUl($("#treeView"), "", files);
 };
 
 Marboo.prototype.toggleList = function(node) {
+  var files;
   if (node.hasClass('collapsed')) {
-    this.generateUl(node, node.attr("title"));
+    files = core().listDir(node.attr("title"));
+    this.generateUl(node, node.attr("title"), files);
     return node.removeClass('collapsed').addClass('expanded');
   } else {
     node.removeClass('expanded').addClass('collapsed');
@@ -136,17 +160,16 @@ Marboo.prototype.toggleList = function(node) {
 };
 
 Marboo.prototype.onChangeTreeViewItem = function(path) {
-  current_url = sprintf("file://%s%s.html", this.root, path);
+  current_url = sprintf("%s%s.html", this.root, path);
   return core().checkHTML(path);
 };
 
-Marboo.prototype.generateUl = function(node, path) {
-  var file, file_path, ul, _i, _len, _ref, _results;
+Marboo.prototype.generateUl = function(node, path, files) {
+  var file, file_path, ul, _i, _len, _results;
   ul = $('<ul class="jqueryFileTree"></ul>');
-  _ref = core().listDir(path);
   _results = [];
-  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-    file = _ref[_i];
+  for (_i = 0, _len = files.length; _i < _len; _i++) {
+    file = files[_i];
     if (file.name.indexOf(".") === 0 || file.name.endsWith("~")) {
       continue;
     }
@@ -168,7 +191,7 @@ Marboo.prototype.generateli = function(path, isDir) {
     });
     li.append(a);
   } else {
-    url = sprintf("file://%s%s.html", this.root, path);
+    url = sprintf("%s%s.html", this.root, path);
     file_components = basename(path).split('.');
     file_extension = file_components[file_components.length - 1];
     li = $(sprintf('<li class="file ext_%s" title="%s"></li>', file_extension, path));
@@ -187,5 +210,3 @@ Marboo.prototype.generateli = function(path, isDir) {
 Marboo.prototype.test = function() {};
 
 marboo = new Marboo();
-
-marboo.init();

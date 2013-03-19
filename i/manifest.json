@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Marboo",
     "description": "The Note Manager Ever You Want.",
-    "version": "0.0.1",
+    "version": "0.1",
     "background": {
         "scripts": ["js/background.js"]
     },
@@ -18,9 +18,9 @@
     },
     "web_accessible_resources": ["images/marboo-48.png"],
     "plugins": [
-        { "path": "plugins/npMarboo.so", "public": false },
-        { "path": "plugins/Marboo_x86_64.plugin", "public": false },
-        { "path": "plugins/npMarboo.dll", "public": false }
+        { "path": "plugins/npMarboo.so", "public": false},
+        { "path": "plugins/Marboo_x86_64.plugin", "public": false},
+        { "path": "plugins/npMarboo.dll", "public": false}
     ],
     "update_url": "http://marboo.biz/crx/update.xml"
 }
