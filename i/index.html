@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Marboo</title>
+        <link type="text/css" rel="stylesheet" href="css/marbooapp.css">
+        <link type="text/css" rel="stylesheet" href="css/jqueryFileTree.css">
+    </head>
+    <body>
+        <!--
+        <script type="text/javascript" src="js/jquery-latest.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-latest.js"></script>
+        <script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+        <script type="text/javascript" src="js/jqueryFileTree.js"></script>
+        <script type="text/javascript" src="js/sprintf-0.7-beta1.js"></script>
+        <div id="treeView" class="ui-layout-west"></div>
+        <iframe id="webView" class="ui-layout-center" src="http://marboo.biz/install-crx.html"></iframe>
+        <object id="marboo-core" type="application/x-marboo" width="0" height="0" ></object>
+        <script type="text/javascript" src="js/marboo.js"></script>
+        -->
+
+        <div id="editor"># 你好
+        </div>
+        <script src="/media/lib/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            var editor = ace.edit("editor");
+            editor.setTheme("ace/theme/monokai");
+            editor.getSession().setMode("ace/mode/markdown");
+        </script>
+    </body>
+</html>

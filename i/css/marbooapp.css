@@ -1,0 +1,165 @@
+html, body {
+    width:		100%;
+    height:		100%;					
+    padding:	0;
+    margin:		0;
+    overflow:	auto; /* when page gets too small */
+    zoom: 1;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#container {
+    background:	#999;
+    height:		100%;
+    margin:		0 auto;
+    width:		100%;
+    /*max-width:	900px;
+    min-width:	700px;
+    _width:		700px;
+     */
+}
+.pane {
+    display:	none; /* will appear when layout inits */
+}
+
+#tool-bar {
+    position: absolute;
+    margin: 0px;
+    top: 0px;
+    bottom: auto;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    z-index: 0;
+    height: 21px;
+    display: block;
+    visibility: visible;
+
+}
+
+#center-view {
+    position: absolute;
+    margin: 0px;
+    left: auto;
+    right: auto;
+    top: 49px;
+    bottom: 49px;
+    height: 615px;
+    width: 4px;
+    z-index: 0;
+    display: block;
+    visibility: visible;
+}
+
+iframe {
+    position: absolute;
+    margin: 0px;
+    left: auto;
+    right: 0px;
+    top: 16px;
+    bottom: 16px;
+    height: 186px;
+    z-index: 0;
+    width: 768px;
+    visibility: visible;
+    display: block;
+}
+
+#tree-view {
+    position: absolute;
+    margin: 0px;
+    left: 0px;
+    right: auto;
+    top: 49px;
+    bottom: 49px;
+    height: 615px;
+    z-index: 0;
+    width: 178px;
+    display: block;
+    visibility: visible;
+}
+
+#status-bar {
+    position: absolute;
+    margin: 0px;
+    top: auto;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    z-index: 0;
+    height: 21px;
+    display: block;
+    visibility: visible;
+}
+
+
+/**
+ *	Basic Layout Theme
+ */
+.ui-layout-pane { /* all 'panes' */ 
+    border: 1px solid #BBB; 
+} 
+.ui-layout-pane-center { /* IFRAME pane */ 
+    padding: 0;
+    margin:  0;
+} 
+.ui-layout-pane-west { /* west pane */ 
+    padding: 0 10px; 
+    background-color: #EEE !important;
+    overflow: auto;
+} 
+
+.ui-layout-resizer { /* all 'resizer-bars' */ 
+    background: #DDD; 
+} 
+.ui-layout-resizer-open:hover { /* mouse-over */
+    background: #9D9; 
+}
+
+.ui-layout-toggler { /* all 'toggler-buttons' */ 
+    background: #AAA; 
+} 
+.ui-layout-toggler-closed { /* closed toggler-button */ 
+    background: #CCC; 
+    border-bottom: 1px solid #BBB; 
+} 
+.ui-layout-toggler .content { /* toggler-text */ 
+    font: 14px bold Verdana, Verdana, Arial, Helvetica, sans-serif;
+}
+.ui-layout-toggler:hover { /* mouse-over */ 
+    background: #DCA; 
+} 
+.ui-layout-toggler:hover .content { /* mouse-over */ 
+    color: #009; 
+}
+
+/* masks are usually transparent - make them visible (must 'override' default) */
+.ui-layout-mask {
+    background:	#C00 !important;
+    opacity:	.20 !important;
+    filter:		alpha(opacity=20) !important;
+}
+
+
+body {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+ul { /* basic menu styling */
+    margin:		1ex 0;
+    padding:	0;
+    list-style:	none;
+    position:	relative;
+}
+li {
+    padding: 0.15em 1em 0.3em 5px;
+}
