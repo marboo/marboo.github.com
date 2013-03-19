@@ -5,9 +5,23 @@
         <title>Marboo</title>
         <link type="text/css" rel="stylesheet" href="css/marbooapp.css">
         <link type="text/css" rel="stylesheet" href="css/jqueryFileTree.css">
+        <style type="text/css" media="screen">
+            #editor { 
+                bottom: 0px;
+                right: 0px;
+                width: 600px;
+                height: 400px;
+            }
+            body {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                top: 0px;
+                left: 0px;
+            }
+        </style>
     </head>
     <body>
-        <!--
         <script type="text/javascript" src="js/jquery-latest.js"></script>
         <script type="text/javascript" src="js/jquery-ui-latest.js"></script>
         <script type="text/javascript" src="js/jquery.layout-latest.js"></script>
@@ -17,11 +31,11 @@
         <iframe id="webView" class="ui-layout-center" src="http://marboo.biz/install-crx.html"></iframe>
         <object id="marboo-core" type="application/x-marboo" width="0" height="0" ></object>
         <script type="text/javascript" src="js/marboo.js"></script>
-        -->
 
-        <div id="editor"># 你好
+        <div id="editor"># hello
         </div>
-        <script src="/media/lib/ace.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="/media/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
         <script>
             var editor = ace.edit("editor");
             editor.setTheme("ace/theme/monokai");
