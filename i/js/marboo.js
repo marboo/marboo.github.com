@@ -64,6 +64,10 @@ Marboo.prototype.buildDemo = function() {
   var files;
   files = [];
   files.push({
+    "name": "Marboo-for-Web-介绍.rst",
+    "isDir": "0"
+  });
+  files.push({
     "name": "markdown语法说明.md",
     "isDir": "0"
   });

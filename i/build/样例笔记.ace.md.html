@@ -4,7 +4,7 @@
         <title> ace.md.template </title>
         <meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="date" content="2013-02-03 18:46:57" />
+        <meta name="date" content="2013-03-20 06:46:57" />
         <meta name="generator" content="Marboo 0.6: http://marboo.biz" />
         <style type="text/css" media="screen">
             #editor { 
@@ -23,26 +23,34 @@
     </head>
     <body style="background-color:transparent">
         <div id="preview" ></div>
-
         <div id="editor"># MarkDown例子
 
-#### test
+## 代码高亮
 
-##### test
+    import os
+    import sys
+    print os.platform
+    print "hello, world"
 
-###### test
-<a href="http://www.baidu.com">baidu</a>
+## 我最喜欢的软件
 
-* a
-* b
+* Reeder
+* Sparrow
+* Momento
+* Marboo
+* Parallel Desktop
+
+## 今天下雪啦！
 </div>
 
         <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
         <script>
             var editor = ace.edit("editor");
             editor.setTheme("ace/theme/monokai");
+
             var editorSession = editor.getSession();
             editorSession.setMode("ace/mode/markdown");
+
             document.getElementById("preview").innerHTML = markdown.toHTML(editorSession.getValue());
             editorSession.on('change', function() {
                 document.getElementById("preview").innerHTML = markdown.toHTML(editorSession.getValue());
