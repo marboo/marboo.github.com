@@ -84,6 +84,10 @@ Marboo.prototype.buildDemo = function() {
     "isDir": "0"
   });
   files.push({
+    "name": "HTML学习.ace.html",
+    "isDir": "0"
+  });
+  files.push({
     "name": "2011-12-29-jekyll-introduction.md",
     "isDir": "0"
   });
