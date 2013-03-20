@@ -95,6 +95,10 @@ Marboo.prototype.buildDemo = function() {
     "name": "hello-world.ace.py",
     "isDir": "0"
   });
+  files.push({
+    "name": "Makefile",
+    "isDir": "0"
+  });
   return this.generateUl($("#treeView"), "", files);
 };
 

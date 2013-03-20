@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> router.template </title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="date" content="2013-02-03 19:28:01" />
+        <meta name="generator" content="Marboo 0.5: http://marboo.biz" />
+
+        <script src="http://marboo.biz/media/lib/markdown.js" type="text/javascript"></script>
+        <!-- highlight.js -->
+        <link rel="stylesheet" href="http://marboo.biz/media/css/highlight.css/default.css">
+        <script src="http://marboo.biz/media/js/highlight.pack.js" type="text/javascript"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body style="background-color:transparent">
+        <textarea id="source" style="display:none">    default: base pygmentize misc sc poem
+    	echo "Done!" > "测 试".count.md
+    	#make clean
+    
+    base:
+    	# 基本测试
+    	touch "测 试".md; sleep 1;
+    	echo "你 好" >> "测 试".md; sleep 1
+    	touch "测 试".rst; sleep 1;
+    	echo "你 好" >> "测 试".rst; sleep 1
+    	touch "测 试".html; sleep 1;
+    	echo 你好 >> "测 试".html; sleep 1
+    
+    pygmentize:
+    	# pygmentize测试
+    	echo "import sys\nprint \"你好\"" > "测 试".py
+    	echo "#include <stdio.h>\nint main() {\npirntf(\"你好\\\\n\");\nreturn 0;\n}" > "测 试".c
+    	echo "var x='marboo';" > "测 试".js
+    	echo "f(1) -> 1;\nf(N)->N*f(N-1).\n" > "测 试".erl
+    
+    sc:
+    	# sc模板测试
+    	touch 测试.sc.md; sleep 1;
+    	mv 测试{.sc,}.md; sleep 1; mv 测试{,.sc}.md
+    	touch 测试.sc.rst; sleep 1;
+    	mv 测试{.sc,}.rst; sleep 1
+    	touch 测试.sc.html; sleep 1;
+    	mv 测试{.sc,}.html; sleep 1
+    
+    poem:
+    	# poem模板测试
+    	touch 测试.poem.md; sleep 1;
+    
+    misc:
+    	# 其他类型测试
+    	touch CNAME; sleep 1; echo marboo.biz > CNAME; sleep 1
+    	touch domains.config; sleep 1; echo whoomin.marboo.biz > domains.config
+    
+    jekyll:
+    	# DO NOT support yet.
+    	#jekyll . /tmp/marboo.biz
+    
+    clean:
+    	rm -f "测 试".*
+    	rm -f 测试.*
+    	rm -f CNAME domains.config
+    </textarea>
+        <div id="preview" />
+        <script src="http://marboo.biz/media/lib/marboo.js" type="text/javascript"></script>
+    </body>
+</html>
