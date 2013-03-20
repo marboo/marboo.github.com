@@ -4,7 +4,7 @@
         <title> ace.template </title>
         <meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="date" content="2013-03-20 08:28:57" />
+        <meta name="date" content="2013-03-20 14:00:57" />
         <meta name="generator" content="Marboo 0.6: http://marboo.biz" />
         <style type="text/css" media="screen">
             #editor {
@@ -22,9 +22,9 @@
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body style="background-color:transparent">
-        <textarea id="source" style="display:none">    import sys
-    print "你好"
-    </textarea>
+        <textarea id="source" style="display:none">import sys
+print "你好"
+</textarea>
         <div id="preview"></div>
         <div id="editor"></div>
 
@@ -34,13 +34,18 @@
             editor.setTheme("ace/theme/monokai");
 
             var editorSession = editor.getSession();
-            editorSession.setMode("ace/mode/markdown");
+            editorSession.setMode("ace/mode/python");
             editorSession.setValue(document.getElementById("source").value);
 
+            var src = editorSession.getValue();
+            src = "    " + src.replace(/\n/g, "\n    ");
+            document.getElementById("preview").innerHTML = markdown.toHTML(src);
+
             editorSession.on('change', function() {
-                document.getElementById("preview").innerHTML = markdown.toHTML(editorSession.getValue());
+                var src = editorSession.getValue();
+                src = "    " + src.replace(/\n/g, "\n    ");
+                document.getElementById("preview").innerHTML = markdown.toHTML(src);
             });
         </script>
-        <script src="http://marboo.biz/media/lib/marboo.js" type="text/javascript"></script>
     </body>
 </html>

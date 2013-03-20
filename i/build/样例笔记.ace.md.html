@@ -7,7 +7,7 @@
         <meta name="date" content="2013-03-20 06:46:57" />
         <meta name="generator" content="Marboo 0.6: http://marboo.biz" />
         <style type="text/css" media="screen">
-            #editor { 
+            #editor {
                 bottom: 0px;
                 right: 0px;
                 width: 600px;
@@ -22,8 +22,7 @@
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body style="background-color:transparent">
-        <div id="preview" ></div>
-        <div id="editor"># MarkDown例子
+        <textarea id="source" style="display:none"># MarkDown例子
 
 ## 代码高亮
 
@@ -31,6 +30,10 @@
     import sys
     print os.platform
     print "hello, world"
+
+html:
+
+<a href="http://marboo.biz">marboo.biz</a>
 
 ## 我最喜欢的软件
 
@@ -41,7 +44,11 @@
 * Parallel Desktop
 
 ## 今天下雪啦！
-</div>
+
+![西山晴雪](/media/images/blog/snow.jpg)
+</textarea>
+        <div id="preview"></div>
+        <div id="editor"></div>
 
         <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
         <script>
@@ -50,6 +57,7 @@
 
             var editorSession = editor.getSession();
             editorSession.setMode("ace/mode/markdown");
+            editorSession.setValue(document.getElementById("source").value);
 
             document.getElementById("preview").innerHTML = markdown.toHTML(editorSession.getValue());
             editorSession.on('change', function() {
