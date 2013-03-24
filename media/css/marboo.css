@@ -1,11 +1,12 @@
 body {
-    //background:url("/media/images/bg/marboo-青.png");
-    //background:url("/media/images/bg/marboo-apple.png");
-    //background:url("/media/images/bg/marboo-wood.jpg");
-    //background:url("/media/images/bg/marboo-Reeder-Noise.png");
-    //background:url("/media/images/bg/marboo-灰.jpg");
-    background:url("../images/bg/marboo-灰.jpg");
-    //color:#afafaf;
+    /*
+    background:url("/media/images/bg/marboo-青.png");
+    background:url("/media/images/bg/marboo-apple.png");
+    background:url("/media/images/bg/marboo-wood.jpg");
+    background:url("/media/images/bg/marboo-Reeder-Noise.png");
+    background:url("/media/images/bg/marboo-灰.jpg");
+    */
+    background:url("/media/images/bg/marboo-灰.jpg");
     font-size: 14px;
     margin: 10px;
 }
