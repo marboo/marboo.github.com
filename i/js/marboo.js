@@ -56,7 +56,7 @@ Marboo = function() {
     this.initEvent();
     this.buildTree();
   } else {
-    buildDir = "http://marboo.biz/i/build";
+    buildDir = "/i/build";
     this.buildDemo();
   }
   return this;
