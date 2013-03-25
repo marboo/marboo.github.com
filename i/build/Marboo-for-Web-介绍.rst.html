@@ -12,22 +12,8 @@
         <link rel="stylesheet" type="text/css" href="/media/css/pygmentize-default.css" media="screen" />
     </head>
     <body style="background-color:transparent">
-        <section>
-            <h1><strong>最新版v0.2.2 已于3月25日发布！</strong></h1>
-
-<p>新增功能：</p>
-
-<ul>
-<li>浏览器里快速笔记</li>
-<li>支持大部分文件格式</li>
-<li>性能大幅提升</li>
-<li>新增幻灯片格式支持</li>
-<li>网页剪辑(实验版)</li>
-</ul>
-
-<p><img src="/media/images/marboo/web-0.2/quick-note-2.png" width="800px"/></p>
-
-<h1>Marboo插件安装指南</h1>
+        <section style="margin-left:20px">
+            <h2>Marboo for Chrome安装指南</h2>
 
 <!--
 .. Author: your_name 
@@ -40,73 +26,54 @@
 .. contents:: 目录
 -->
 
-<h2>运行要求</h2>
-
-<p>Google Chrome 25.0.1364.172 运行正常。低版本可能有问题。</p>
-
-<h2>下载</h2>
-
-<h3>下载配置文件</h3>
+<h3>1.下载配置文件</h3>
 
 <p><a href="http://marboo.googlecode.com/files/marboo.zip">http://marboo.googlecode.com/files/marboo.zip</a></p>
 
-<h4>Windows用户</h4>
+<h3>2.解压缩到目录</h3>
 
-<p>XP：解压缩到目录</p>
+<h4><em>Windows用户</em></h4>
+
+<ul>
+<li><p><strong>XP用户</strong>，解压缩到目录</p>
 
 <pre><code>C:\Documents And Settings\[User Name]\marboo
-</code></pre>
-
-<p>Win7: 解压缩到目录</p>
+</code></pre></li>
+<li><p><strong>Win7用户</strong>: 解压缩到目录</p>
 
 <pre><code>C:\Users\[User Name]\marboo
-</code></pre>
-
-<p>如果有HOME环境变量，那么放到目录：</p>
-
-<pre><code>%HOME%\marboo
-</code></pre>
-
-<p>如果有USERPROFILE环境变量，那么放到目录</p>
-
-<pre><code>%USERPROFILE%\marboo
-</code></pre>
+</code></pre></li>
+</ul>
 
 <p>上述目录不存在的话手工建立</p>
 
-<h4>Linux用户</h4>
+<h4><em>Linux、Mac用户</em></h4>
 
-<p>解压缩，并重命名为.marboo到主目录下：</p>
+<p>解压缩，将文件夹重命名为.marboo，放到主目录下：</p>
 
 <pre><code>~/.marboo
 </code></pre>
 
-<h3>下载Chrome插件</h3>
+<h3>3.下载Chrome插件</h3>
 
-<p>插件下载地址：</p>
+<p>插件下载地址：<a href="http://marboo.googlecode.com/files/marboo_v0.2.2.crx">http://marboo.googlecode.com/files/marboo_v0.2.2.crx</a></p>
 
-<p><a href="http://marboo.googlecode.com/files/marboo_v0.2.2.crx">http://marboo.googlecode.com/files/marboo_v0.2.2.crx</a></p>
+<h3>4.安装</h3>
 
-<h2>安装</h2>
+<h4>4.1 进入插件管理页面：</h4>
 
-<p>进入插件管理页面：</p>
+<p><img src="/media/images/marboo/web-0.2/crx-install-0.png" width="400px"/></p>
 
-<p><img src="/media/images/marboo/web-0.2/crx-install-0.png" width="500px"/></p>
+<h4>4.2 将下载的crx文件拖入该页来安装：</h4>
 
-<p>将下载的crx文件拖入该页来安装：</p>
-
-<p><img src="/media/images/marboo/web-0.2/crx-install-1.png" width="500px"/>
+<p><img src="/media/images/marboo/web-0.2/crx-install-1.png" width="550px"/>
 <img src="/media/images/marboo/web-0.2/crx-install-2.png" width="400px"/></p>
 
-<p>安装完毕是这个样子滴(“已启用”选择框可以用来重启Marboo，当Marboo没有反应的时候需要重新勾选一下来重启)：</p>
+<p>安装完毕是这个样子滴：</p>
 
 <p><img src="/media/images/marboo/web-0.2/crx-install-3.png" width="600px"/></p>
 
-<h2>使用说明</h2>
-
-<p><strong>如果修改文件后页面没有更新，请尝试在页面空白处点右键，选择“重新载入框架"</strong></p>
-
-<p><img src="/media/images/marboo/web-0.2/crx-install-7.png" width="200px"/></p>
+<p>PS: <small>“已启用”选择框可以用来重启Marboo，当Marboo没有反应的时候需要重新勾选一下来重启。</small></p>
 
 <h3>目前实现的功能</h3>
 
@@ -118,13 +85,17 @@
 <li>扩展</li>
 </ul>
 
-<h2>Marboo微群</h2>
+<h3>Marboo微群</h3>
 
 <p><a href="http://q.weibo.com/1656864">http://q.weibo.com/1656864</a></p>
 
-<h2>常见问题</h2>
+<h3>常见问题</h3>
 
-<h3>左栏为空</h3>
+<p><strong>如果修改文件后页面没有更新，请尝试在页面空白处点右键，选择“重新载入框架"</strong></p>
+
+<p><img src="/media/images/marboo/web-0.2/crx-install-7.png" width="200px"/></p>
+
+<h4>左栏为空</h4>
 
 <ol>
 <li><p>确保已经 初始化配置</p></li>
@@ -163,13 +134,31 @@
 
 <p>如果执行没有结果，请联系amoblin来进一步解决。</p>
 
-<h3>右栏无法显示预览</h3>
+<h4>右栏无法显示预览</h4>
 
 <p>请确认在插件管理页是否已勾选：允许访问文件网址。</p>
 
-<h3>无反应</h3>
+<h4>无反应</h4>
 
 <p>进入扩展程序管理页面，重新启动Marboo。</p>
+
+<h3>Changelog</h3>
+
+<p>新增功能：</p>
+
+<ul>
+<li>浏览器里快速笔记</li>
+<li>支持大部分文件格式</li>
+<li>性能大幅提升</li>
+<li>新增幻灯片格式支持</li>
+<li>网页剪辑(实验版)</li>
+</ul>
+
+<p><img src="/media/images/marboo/web-0.2/quick-note-2.png" width="500px"/></p>
+
+<h3>运行要求</h3>
+
+<p>Google Chrome 25.0.1364.172 运行正常。低版本可能有问题。</p>
 
         </section>
         <script src="/bootstrap/js/bootstrap.min.js"></script>
