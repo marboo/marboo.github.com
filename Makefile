@@ -8,7 +8,7 @@ default:
 	cp .gitignore ${dest}
 	mkdir -p ${dest}/media/images/bg
 	cp -r ../media/images/marboo ${dest}/media/images
-	cp -r ../media/images/blog ${dest}/media/images
+	#cp -r ../media/images/blog ${dest}/media/images
 	cp -r ../media/images/bg/marboo* ${dest}/media/images/bg
 	cp -r ../media/css ${dest}/media
 	cp -r ../media/lib ${dest}/media

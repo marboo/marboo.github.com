@@ -38,10 +38,12 @@ article {
 
 dt {
     float: left;
+    margin-top: 3px;
 }
 
 dd {
     margin-left: 140px;
+    margin-top: 3px;
     padding-left: 10px;
 }
 
