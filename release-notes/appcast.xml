@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
    <channel>
-      <title>MarkBook 更新日志</title>
-      <link>http://updater.herokuapp.com/markbook/appcast.xml</link>
+      <title>Marboo更新日志</title>
+      <link>http://marboo.biz/release-notes/appcast.xml</link>
       <description>新特性列表</description>
       <language>zh_CN</language>
+      <item>
+          <title>Marboo 0.6.1(227)</title>
+          <sparkle:releaseNotesLink>http://marboo.biz/release-notes/latest.html</sparkle:releaseNotesLink>
+          <pubDate>Mon Apr  1 07:40:44 CST 2013</pubDate>
+          <enclosure url="http://amoblin.googlecode.com/files/Marboo_v0.6.1.zip" sparkle:shortVersionString="0.6.1" sparkle:version="227" length="5719648" type="application/octet-stream" sparkle:dsaSignature="MC0CFB7i+HkEWcTDUrhMMzX/F1MmwjBSAhUAl4ZO4b2DlySpFsJ3yl03EyQZ+Do=" />
+      </item>
       <item>
           <title>Marboo 0.6(216)</title>
           <sparkle:releaseNotesLink>http://marboo.biz/release-notes/latest.html</sparkle:releaseNotesLink>
