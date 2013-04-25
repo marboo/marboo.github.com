@@ -1,0 +1,52 @@
+.fullscreen {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#editor-window {
+    float: right;
+    position:fixed;
+    bottom: 2px;
+    right: 2px;
+    width: 600px;
+    height: 420px;
+    opacity: 0.9;
+}
+
+#editor {
+    width: 100%;
+    height: 95%;
+}
+
+#save_btn {
+    float:right;
+}
+
+.toolbar {
+    background: #a0a0a0;
+    height: 20px;
+}
+
+.btn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    background-size: cover;
+}
+
+#close_btn {
+    background: url(/media/images/marboo/marboo-icon-close.png);
+}
+
+.zoom-out-btn {
+    background: url(/media/images/marboo/marboo-icon-contract.png) !important;
+}
+
+#zoom_btn {
+    background: url(/media/images/marboo/marboo-icon-expand.png);
+}
+
+#save_btn {
+    background: url(/media/images/marboo/marboo-icon-disk.png);
+}

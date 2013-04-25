@@ -1,68 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> ace.md.template </title>
+        <title> md.template </title>
         <meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="date" content="2013-03-20 06:46:57" />
+        <meta name="date" content="2013-02-03 18:46:57" />
         <meta name="generator" content="Marboo 0.6: http://marboo.biz" />
-        <style type="text/css" media="screen">
-            #editor {
-                bottom: 0px;
-                right: 0px;
-                width: 600px;
-                height: 400px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="/media/css/marboo.css" media="screen" />
 
-        <script src="http://marboo.biz/media/lib/markdown.js" type="text/javascript"></script>
-        <!-- highlight.js -->
-        <link rel="stylesheet" href="http://marboo.biz/media/css/highlight.css/default.css">
-        <script src="http://marboo.biz/media/js/highlight.pack.js" type="text/javascript"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/media/css/pygmentize-default.css" media="screen" />
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
     </head>
-    <body style="background-color:transparent">
-        <textarea id="source" style="display:none"># MarkDown例子
+    <body style="background-color:transparent" contenteditable="false">
+        <section style="margin-left:20px">
+            <h1>MarkDown例子</h1>
 
-## 代码高亮
+<h2>代码高亮</h2>
 
-    import os
-    import sys
-    print os.platform
-    print "hello, world"
+<pre><code>import os
+import sys
+print os.platform
+print "hello, world"
+</code></pre>
 
-html:
+<p>html:</p>
 
-<a href="http://marboo.biz">marboo.biz</a>
+<p><a href="http://marboo.biz">marboo.biz</a></p>
 
-## 我最喜欢的软件
+<h2>我最喜欢的软件</h2>
 
-* Reeder
-* Sparrow
-* Momento
-* Marboo
-* Parallel Desktop
+<ul>
+<li>Reeder</li>
+<li>Sparrow</li>
+<li>Momento</li>
+<li>Marboo</li>
+<li>Parallel Desktop</li>
+</ul>
 
-## 今天下雪啦！
+<h2>今天下雪啦！</h2>
 
-![西山晴雪](/media/images/blog/snow.jpg)
-</textarea>
-        <div id="preview"></div>
-        <div id="editor"></div>
+<p><img src="/media/images/blog/snow.jpg" alt="西山晴雪" title="" /></p>
 
-        <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-        <script>
-            var editor = ace.edit("editor");
-            editor.setTheme("ace/theme/monokai");
-
-            var editorSession = editor.getSession();
-            editorSession.setMode("ace/mode/markdown");
-            editorSession.setValue(document.getElementById("source").value);
-
-            document.getElementById("preview").innerHTML = markdown.toHTML(editorSession.getValue());
-            editorSession.on('change', function() {
-                document.getElementById("preview").innerHTML = markdown.toHTML(editorSession.getValue());
-            });
-        </script>
+        </section>
     </body>
 </html>

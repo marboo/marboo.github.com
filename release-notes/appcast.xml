@@ -6,6 +6,12 @@
       <description>新特性列表</description>
       <language>zh_CN</language>
       <item>
+          <title>Marboo 0.6.2(241)</title>
+          <sparkle:releaseNotesLink>http://marboo.biz/release-notes/latest.html</sparkle:releaseNotesLink>
+          <pubDate>Thu Apr 25 14:11:37 CST 2013</pubDate>
+          <enclosure url="https://dl.dropboxusercontent.com/u/676608/marboo/Marboo_v0.6.2.zip" sparkle:shortVersionString="0.6.2" sparkle:version="241" length="11430710" type="application/octet-stream" sparkle:dsaSignature="MCwCFHI8x7Us9q3vSLk2ibF2vC6UB1rvAhRyqNSqQRlkb7BGhAKt+HlpZrRgMQ==" />
+      </item>
+      <item>
           <title>Marboo 0.6.1(227)</title>
           <sparkle:releaseNotesLink>http://marboo.biz/release-notes/latest.html</sparkle:releaseNotesLink>
           <pubDate>Mon Apr  1 07:40:44 CST 2013</pubDate>

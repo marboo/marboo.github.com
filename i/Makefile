@@ -1,2 +1,2 @@
 default:
-	cp ~/.marboo/build/marboo-demo/basic-notes/* build
+	cp ~/.marboo/build/media/demo/basic-notes/* build

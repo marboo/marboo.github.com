@@ -1,20 +1,19 @@
+html {
+    height: 95%;
+}
+
 body {
     /*
     background:url("/media/images/bg/marboo-Reeder-Noise.png");
     background:url("/media/images/bg/marboo-wood.jpg");
     background:url("/media/images/bg/marboo-apple.png");
     background:url("/media/images/bg/marboo-青.png");
+    background:url("/media/images/bg/page-bg.png");
     */
     background:url("/media/images/bg/marboo-灰.jpg");
     font-size: 14px;
     margin: 10px;
-}
-
-#editor {
-    bottom: 0px;
-    right: 0px;
-    width: 600px;
-    height: 400px;
+    height: 100%;
 }
 
 .kbd {
