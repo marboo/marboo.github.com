@@ -17,6 +17,8 @@ default:
 	#cp -r ~/.marboo/build/bootstrap ${dest}
 	#find .|grep index.html | xargs rm -f
 	find /tmp/marboo.biz|grep jade$$ |xargs rm -f
+	cp ~/.marboo/build/WebSites/marboo.biz/source/install.md.html i/build/Marboo-for-Web-介绍.md.html
+	cp ~/.marboo/build/WebSites/marboo.biz/source/install.md.html install-crx.html
 
 clean:
 	find .|grep index.html | xargs rm -f
