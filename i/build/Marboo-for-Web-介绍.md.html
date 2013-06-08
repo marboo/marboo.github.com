@@ -11,11 +11,14 @@
         <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="/media/css/pygmentize-default.css" media="screen" />
         <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <!-- highlight.js -->
+        <link rel="stylesheet" href="/media/css/highlight.css/default.css">
+        <script src="/media/lib/highlight.pack.js" type="text/javascript"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body style="background-color:transparent" contenteditable="false">
         <section style="margin-left:20px">
-            <h2>Marboo for Chrome安装指南</h2>
-
+            <h2 id="marboo-for-chrome">Marboo for Chrome安装指南</h2>
 <!--
 .. Author: your_name 
 .. title:: this is the real title in Jekyll.
@@ -27,61 +30,41 @@
 .. contents:: 目录
 -->
 
-<h3>1.下载Chrome插件(安装方法在下面)</h3>
-
+<h3 id="1chrome">1.下载Chrome插件(安装方法在下面)</h3>
 <p>插件下载地址：<a href="http://marboo.googlecode.com/files/marboo_v0.2.5.crx">http://marboo.googlecode.com/files/marboo_v0.2.5.crx</a></p>
-
 <p>下载时请忽略下面的提示：</p>
-
-<p><img src="/media/images/marboo/web-0.2/crx-install-8.jpg" alt="ignore-warnning" title="" /></p>
-
-<h3>2.下载配置文件</h3>
-
+<p><img alt="ignore-warnning" src="/media/images/marboo/web-0.2/crx-install-8.jpg" /></p>
+<h3 id="2">2.下载配置文件</h3>
 <p><a href="http://marboo.googlecode.com/files/marboo_templates_v1.zip">http://marboo.googlecode.com/files/marboo_templates_v1.zip</a></p>
-
-<h3>3.解压缩到目录</h3>
-
-<h4><em>Windows用户</em></h4>
-
+<h3 id="3">3.解压缩到目录</h3>
+<h4 id="windows"><em>Windows用户</em></h4>
 <ul>
-<li><p><strong>XP用户</strong>，解压缩到目录</p>
-
+<li>
+<p><strong>XP用户</strong>，解压缩到目录</p>
 <pre><code>C:\Documents And Settings\[User Name]\marboo
-</code></pre></li>
-<li><p><strong>Win7用户</strong>: 解压缩到目录</p>
-
+</code></pre>
+</li>
+<li>
+<p><strong>Win7用户</strong>: 解压缩到目录</p>
 <pre><code>C:\Users\[User Name]\marboo
-</code></pre></li>
+</code></pre>
+</li>
 </ul>
-
 <p>上述目录不存在的话手工建立</p>
-
-<h4><em>Linux、Mac用户</em></h4>
-
+<h4 id="linuxmac"><em>Linux、Mac用户</em></h4>
 <p>解压缩，将文件夹重命名为.marboo，放到主目录下：</p>
-
 <pre><code>~/.marboo
 </code></pre>
-
-<h3>4.安装插件</h3>
-
-<h4>4.1 进入插件管理页面：</h4>
-
+<h3 id="4">4.安装插件</h3>
+<h4 id="41">4.1 进入插件管理页面：</h4>
 <p><img src="/media/images/marboo/web-0.2/crx-install-0.png" width="400px"/></p>
-
-<h4>4.2 将下载的crx文件拖入该页来安装：</h4>
-
+<h4 id="42-crx">4.2 将下载的crx文件拖入该页来安装：</h4>
 <p><img src="/media/images/marboo/web-0.2/crx-install-1.png" width="550px"/>
 <img src="/media/images/marboo/web-0.2/crx-install-2.png" width="400px"/></p>
-
 <p>安装完毕是这个样子滴：</p>
-
 <p><img src="/media/images/marboo/web-0.2/crx-install-3.png" width="600px"/></p>
-
 <p>PS: <small>“已启用”选择框可以用来重启Marboo，当Marboo没有反应的时候需要重新勾选一下来重启。</small></p>
-
-<h3>目前实现的功能</h3>
-
+<h3 id="_1">目前实现的功能</h3>
 <ul>
 <li>左栏自动同步文件/目录的增删</li>
 <li>双击左栏文件，调用本地编辑器编辑</li>
@@ -89,83 +72,56 @@
 <li>代码语法高亮</li>
 <li>扩展</li>
 </ul>
-
-<h3>Marboo微群</h3>
-
+<h3 id="marboo">Marboo微群</h3>
 <p><a href="http://q.weibo.com/1656864">http://q.weibo.com/1656864</a></p>
-
-<h3>常见问题</h3>
-
+<h3 id="_2">常见问题</h3>
 <p><strong>如果修改文件后页面没有更新，请尝试在页面空白处点右键，选择“重新载入框架"</strong></p>
-
 <p><img src="/media/images/marboo/web-0.2/crx-install-7.png" width="200px"/></p>
-
-<h4>左栏为空</h4>
-
+<h4 id="_3">左栏为空</h4>
 <ol>
-<li><p>确保已经 初始化配置</p></li>
-<li><p>右键，审查元素，点左下角第二个图标，进入javascript控制台</p></li>
+<li>
+<p>确保已经 初始化配置</p>
+</li>
+<li>
+<p>右键，审查元素，点左下角第二个图标，进入javascript控制台</p>
+</li>
 </ol>
-
 <p>首先确认插件是否正确加载：</p>
-
 <p>预期结果（看到TypeError莫惊慌）：</p>
-
 <pre><code>&gt; mbo.core()
   "TypeError"
 </code></pre>
-
 <p>可能出现的错误结果：</p>
-
 <pre><code>&gt; mbo.core()
   &lt;object id="marboo-core" type="application/x-marboo" width="0" height="0" &gt;&lt;/object&gt;
 </code></pre>
-
 <p>解决方法：联系amoblin。</p>
-
 <p>其次确认Marboo的目录：</p>
-
 <pre><code>&gt; mbo.core().root
   "C:\Documents and Settings\Administrator/marboo/build"
 </code></pre>
-
 <p>若执行结果里面的marboo路径和 初始化配置 里面的marboo路径不符，那么将配置文件转移到这里的marboo路径下即可。</p>
-
 <p>最后确认listDir函数正常工作：</p>
-
 <pre><code>&gt; mbo.core().listDir("/")
   [ Object , Object , Object , Object , Object , Object , Object , Object ]
 </code></pre>
-
 <p>如果执行没有结果，请联系amoblin来进一步解决。</p>
-
-<h4>右栏无法显示预览</h4>
-
+<h4 id="_4">右栏无法显示预览</h4>
 <p>请确认在插件管理页是否已勾选：允许访问文件网址。</p>
-
-<h4>无反应</h4>
-
+<h4 id="_5">无反应</h4>
 <p>进入扩展程序管理页面，重新启动Marboo。</p>
-
-<h3>Changelog</h3>
-
-<h4>v0.2.5 2013-3-31 9:44</h4>
-
+<h3 id="changelog">Changelog</h3>
+<h4 id="v025-2013-3-31-944">v0.2.5 2013-3-31 9:44</h4>
 <ul>
 <li>修复Windows下乱码问题</li>
 </ul>
-
-<h4>v0.2.4</h4>
-
+<h4 id="v024">v0.2.4</h4>
 <ul>
 <li>优化UI</li>
 <li>修复Windows下bug</li>
 </ul>
-
-<h4>v0.2.3</h4>
-
+<h4 id="v023">v0.2.3</h4>
 <p>新增功能：</p>
-
 <ul>
 <li>浏览器里快速笔记</li>
 <li>支持大部分文件格式</li>
@@ -173,13 +129,9 @@
 <li>新增幻灯片格式支持</li>
 <li>网页剪辑(实验版)</li>
 </ul>
-
 <p><img src="/media/images/marboo/web-0.2/quick-note-2.png" width="500px"/></p>
-
-<h3>运行要求</h3>
-
+<h3 id="_6">运行要求</h3>
 <p>Google Chrome 25.0.1364.172 运行正常。低版本可能有问题。</p>
-
         </section>
     </body>
 </html>

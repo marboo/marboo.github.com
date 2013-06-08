@@ -13,7 +13,7 @@ default:
 	cp -r ../../media/css ${dest}/media
 	cp -r ../../media/lib ${dest}/media
 	cp -r ../../media/js ${dest}/media
-	cp -r ~/Dropbox/Marboo/media/bootstrap ${dest}
+	cp -r ~/Dropbox/应用/Marboo/media/bootstrap ${dest}
 	#cp -r ~/.marboo/build/bootstrap ${dest}
 	#find .|grep index.html | xargs rm -f
 	find /tmp/marboo.biz|grep jade$$ |xargs rm -f

@@ -40,3 +40,17 @@ body {
      //border: thin solid #AAF;
      //border-radius: .5em;
 }
+
+#toc {
+	font-size: 12px;
+	margin: 10px 20px 0 0;
+	background: #eee;
+	padding: 15px 30px 15px 10px;
+	position:fixed;
+	top: 0;
+	right: 10px;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
