@@ -1,6 +1,6 @@
 body {
     color: #111;
-    font: 14px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+    font: 22px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
     text-align: center;
 }
 
@@ -13,7 +13,7 @@ div, h1, h2, p {
     margin: auto;
     padding: 20px 0;
     text-align: left;
-    width: 390px;
+    width: 490px;
 }
 
 h1, h2 {
@@ -29,7 +29,7 @@ h1 {
 
 h2 {
     color: #666;
-    font-size: 18px;
+    font-size: 28px;
     font-style: italic;
     margin-bottom: 30px;
 }
@@ -37,10 +37,13 @@ h2 {
 p {
     line-height: 1.5;
     margin-bottom: 15px;
+    font-style: italic;
+    font-weight: normal;
 }
 
 /* The magic of selectors begins... */
 
+/*
 h2:before {
     content: '— ';
 }
@@ -65,3 +68,4 @@ h2:after {
     margin-bottom: 30px;
     padding-bottom: 30px;
 }
+*/

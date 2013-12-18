@@ -3,17 +3,25 @@ html {
 }
 
 body {
-    /*
-    background:url("/media/images/bg/marboo-Reeder-Noise.png");
+	/*
+	background:url("/media/images/bg/marboo-apple.png");
     background:url("/media/images/bg/marboo-wood.jpg");
-    background:url("/media/images/bg/marboo-apple.png");
     background:url("/media/images/bg/marboo-青.png");
-    background:url("/media/images/bg/page-bg.png");
-    */
     background:url("/media/images/bg/marboo-灰.jpg");
+	background:url("/media/images/bg/page-bg.png");
+	background:url("/media/images/bg/marboo-Reeder-Noise.png");
+    */
+/*    background:url("/media/images/bg/marboo-灰.jpg");*/
+    background-color: #eeeeee;
+    
     font-size: 14px;
-    margin: 10px;
-    height: 100%;
+    padding: 30px 15px 15px 15px;
+}
+
+article {
+/*    background-color: #fff;*/
+    border: 1px solid #d1d2d4;
+    border-radius: 3px;
 }
 
 .kbd {

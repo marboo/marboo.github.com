@@ -4,7 +4,7 @@ default:
 	#cp ~/.marboo/build/misc/marboo-doc/README.rst.html guide/index.html
 	#cp ~/.marboo/build/marboo/install.rst.html install-crx.html
 	find .|grep jade| xargs jade -P
-	/Users/amoblin/.rvm/gems/ruby-1.9.3-p125/bin/jekyll build -s . -d ${dest}
+	jekyll build -s . -d ${dest}
 	cp .gitignore ${dest}
 	mkdir -p ${dest}/media/images/bg
 	cp -r ../../media/images/marboo ${dest}/media/images
