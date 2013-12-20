@@ -3,15 +3,16 @@ html {
 }
 
 body {
-	/*
-	background:url("/media/images/bg/marboo-apple.png");
-    background:url("/media/images/bg/marboo-wood.jpg");
-    background:url("/media/images/bg/marboo-青.png");
-    background:url("/media/images/bg/marboo-灰.jpg");
-	background:url("/media/images/bg/page-bg.png");
-	background:url("/media/images/bg/marboo-Reeder-Noise.png");
-    */
-/*    background:url("/media/images/bg/marboo-灰.jpg");*/
+    /*
+     * 设置所有笔记背景图片或背景颜色
+      background:url("/media/images/bg/marboo-apple.png");
+      background:url("/media/images/bg/marboo-wood.jpg");
+      background:url("/media/images/bg/marboo-青.png");
+      background:url("/media/images/bg/marboo-灰.jpg");
+      background:url("/media/images/bg/page-bg.png");
+      background:url("/media/images/bg/marboo-Reeder-Noise.png");
+      background:url("/media/images/bg/marboo-灰.jpg");
+      */
     background-color: #eeeeee;
     
     font-size: 14px;
