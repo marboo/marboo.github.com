@@ -8,9 +8,9 @@
       <item>
           <title>Marboo 0.6.6(275)</title>
           <sparkle:releaseNotesLink>http://marboo.biz/release-notes/latest.html</sparkle:releaseNotesLink>
-          <pubDate>Sat Jan  4 14:59:37 CST 2014</pubDate>
-          <enclosure url="http://amoblin.googlecode.com/files/Marboo_v0.6.6.zip" sparkle:shortVersionString="0.6.6" sparkle:version="275" length="5576092" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCkoSBqVnewDNADX1wdNezvAC0aTgIVAJ6ZdgfujpBha7hRWWSeo86rmyJl" />
-      </item>
+          <pubDate>Sun Jan  5 06:41:47 CST 2014</pubDate>
+          <enclosure url="http://amoblin.googlecode.com/files/Marboo_v0.6.6.zip" sparkle:shortVersionString="0.6.6" sparkle:version="275" length="5576090" type="application/octet-stream" sparkle:dsaSignature="MCwCFDWkNmnRFZLf+hY5U05678FcpdOaAhRTWAUm9diUXY2Yp0O8EPjDjUR2xA==" />
+	  </item>
       <item>
           <title>Marboo 0.6.5(272)</title>
           <sparkle:releaseNotesLink>http://marboo.biz/release-notes/latest.html</sparkle:releaseNotesLink>
