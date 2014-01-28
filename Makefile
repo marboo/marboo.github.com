@@ -1,9 +1,9 @@
 #dest=~/Dropbox/Apps/FarBox/marboo
 dest=/tmp/marboo.biz
 default:
-	#cp ~/.marboo/build/misc/marboo-doc/README.rst.html guide/index.html
+	#cp ~/Dropbox/Apps/Marboo/build/misc/marboo-doc/README.rst.html guide/index.html
 	#cp ~/.marboo/build/marboo/install.rst.html install-crx.html
-	find .|grep jade| xargs jade -P
+	#find .|grep jade| xargs jade -P
 	jekyll build -s . -d ${dest}
 	cp .gitignore ${dest}
 	mkdir -p ${dest}/media/images/bg
@@ -13,7 +13,7 @@ default:
 	cp -r ../../media/css ${dest}/media
 	cp -r ../../media/lib ${dest}/media
 	cp -r ../../media/js ${dest}/media
-	cp -r ~/Dropbox/应用/Marboo/media/bootstrap ${dest}/media
+	cp -r ~/Dropbox/Apps/Marboo/media/bootstrap ${dest}/media
 	#cp -r ~/.marboo/build/bootstrap ${dest}
 	#find .|grep index.html | xargs rm -f
 	find /tmp/marboo.biz|grep jade$$ |xargs rm -f

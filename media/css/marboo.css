@@ -1,6 +1,10 @@
 html {
     height: 95%;
 }
+/*
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
+    font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}*/
 
 body {
     /*
@@ -14,8 +18,11 @@ body {
       background:url("/media/images/bg/marboo-灰.jpg");
       */
     background-color: #eeeeee;
-    
-    font-size: 14px;
+
+    /* 设置所有笔记的字号大小 */
+    font-size: 14px !important;
+    color: black;
+
     padding: 30px 15px 15px 15px;
 }
 

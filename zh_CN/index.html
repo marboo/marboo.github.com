@@ -1,136 +1,325 @@
 <!DOCTYPE html>
-<html xmlns:wb="http://open.weibo.com/wb">
+<html lang="en">
   <head>
-    <title> Marboo - 自由书写</title>
     <meta charset="utf-8">
-    <!-- Bootstrap-->
-    <link href="/media/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="/media/css/base.css" type="text/css">
-    <link href="/media/css/ruhoh.css" rel="stylesheet" media="screen">
-    <link href="/media/css/style.css" rel="stylesheet" media="screen">
-    <link href="/media/css/sunburst-custom.css" rel="stylesheet" media="screen">
-    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=993231938" type="text/javascript" charset="utf-8"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="/media/bootstrap/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="amoblin">
+    <link rel="shortcut icon" href="/media/ico/favicon.png">
+
+    <title>Marboo - 自由书写，极致浏览</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/media/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/media/css/carousel.css" rel="stylesheet">
+    <link href="/media/css/icons.css" rel="stylesheet">
   </head>
-  <body style="background-color: transparent;">
-    <div class="navbar">
-      <div style="background: #F0F0D8; box-shadow: 0 0 0 0; border-bottom: 1px solid #E0E4CC;" class="navbar-inner"><a href="/" class="brand">Marboo</a>
-        <ul class="nav">
-          <li><a href="/guide/">用户手册</a></li>
-          <li><a href="/gallery/">玩法</a></li>
-          <li><a href="/slides/marboo-intro.remark.md.html">Marboo概览</a></li>
-        </ul>
-        <div class="nav btn-group pull-right"><a style="margin-top: 8px; margin-right: 4px;" data-toggle="dropdown" href="#" class="btn btn-small dropdown-toggle">简体中文<span class="caret"></span></a>
-          <ul role="menu" class="dropdown-menu">
-            <li><a href="/">English</a></li>
-          </ul>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Marboo</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">主页</a></li>
+                <li><a href="/guide">用户手册</a></li>
+                <li><a href="/gallery">画廊</a></li>
+                <li><a href="/slides/marboo-intro.remark.md.html">概览</a></li>
+                <li><a href="http://amoblin.marboo.biz/">博客</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">简体中文 <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/">English</a></li>
+		    <!--
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+		    -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <ul class="nav social pull-right">
-          <li><a href="http://amoblin.marboo.biz/">博客</a></li>
-          <li><wb:follow-button uid="1657760362" type="gray_1" width="67" height="24" ></wb:follow-button></li>
-          <li><wb:share-button appkey="993231938" ></wb:share-button></li>
-          <li><a href="https://twitter.com/amoblin" data-show-count="false" data-lang="en" class="twitter-follow-button">Twitter</a></li>
-          <li><a href="https://twitter.com/share" data-lang="en" data-url="http://marboo.biz" data-hashtags="Marboo" data-text="new markdown notes manager for the hack using OS X" class="twitter-share-button">Tweet</a></li>
-        </ul>
+
       </div>
     </div>
-    <div style="position: relative; top: 50px;" class="container">
-      <div class="content">
-        <div align="center"></div>
-        <div class="row">
-          <div class="span8 offset2">
-            <h2 class="splash-header">还在为Evernote不支持Markdown，Git，Vim而烦恼吗？</h2>
-            <p style="margin-bottom: 20px;"><strong>Marboo</strong>是<b>最好的</b>平台式个人知识管理软件。<br>使用Marboo，你可以：记笔记，发文章，写Web页面，管理代码。而这一切，基于如下2个设计理念：<br>使用MVC，将内容和表现分离，使用Markdown等置标语言书写内容，用css+js写成的各种模板来做排版显示。<br>遵循UNIX的KISS哲学，根据用户配置，Marboo调用外部软件来完成各部分的工作：</p>观看演示视频<a href="https://vimeo.com/58428246">@vimeo</a>或<a href="http://v.youku.com/v_show/id_XNTA4MzgyMzQ4.html">@优酷</a>
-          </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:590px">
+      <div class="row featurette">
+        <div class="col-md-12" align="center">
+          <h2 class="featurette-heading">自由书写，极致浏览 <span class="text-muted"></span></h2>
+          <p class="lead text-muted">让您笔下生辉</p>
+          <br/><br/>
         </div>
-        <div class="row splash stripe">
-          <div class="span6 splash-message">
-            <div style="padding: 20px;" class="wrapper">
-              <table style="margin: 0; width: 100%;" class="table-condensed">
-                <tbody>
-                  <tr>
-                    <td><i class="icon-ok-sign"></i><a href="http://amoblin.marboo.biz/orgmode-cn/">Org Mode </a>/Markdown</td>
-                    <td>记笔记(<a href="/guide/index.html#markdown">其他格式？</a>)</td>
-                  </tr>
-                  <tr>
-                    <td><i class="icon-ok-sign"></i><strong>Emacs/Vim</strong></td>
-                    <td>编辑内容</td>
-                  </tr>
-                  <tr>
-                    <td><i class="icon-ok-sign"></i><strong>HTML</strong></td>
-                    <td>输出模板</td>
-                  </tr>
-                  <tr>
-                    <td><i class="icon-ok-sign"></i><strong>Shell Scripts</strong></td>
-                    <td>自定义转化脚本</td>
-                  </tr>
-                  <tr>
-                    <td><i class="icon-ok-sign"></i><strong>Git</strong></td>
-                    <td>版本控制，内容同步</td>
-                  </tr>
-                  <tr>
-                    <td><i class="icon-ok-sign"></i><strong>Jekyll</strong></td>
-                    <td>发布博客</td>
-                  </tr>
-                  <tr>
-                    <td><i class="icon-ok-sign"></i><strong>Make/Rake</strong></td>
-                    <td>自动化</td>
-                  </tr>
-                  <tr>
-                    <td><i class="icon-ok-sign"></i><strong>命令行</strong></td>
-                    <td>实时反馈命令行的操作 <a href="http://ascii.io/a/2245">观看演示</a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="icon-ok-sign"></i><strong>无穷的扩展</strong></td>
-                    <td>参看<a href="/guide/#id45">配置</a></td>
-                  </tr>
-                </tbody>
-              </table>
+        <div class="col-md-7" align="center">
+          <img class="featurette-image img-responsive" src="/media/images/marboo/0.6/marboo-vim-md.png" style="width:80%"  alt="Generic placeholder image">
+        </div>
+        <div class="col-md-5" align="center">
+          <h2 class="featurette-heading" style="font-size:30px;margin-top:80px; margin-bottom:80px">Marboo Mac客户端</h2>
+	  <a href="http://marboo.googlecode.com/files/Marboo_v0.6.6.dmg" class="btn btn-default btn-lg" style="background:#428bca;width:300px">
+            <h2 style="font-size:25px; font-weight:300; margin-top:10px; color:white">下载</h2>
+	  </a>
+          <br/>
+          <p text-align="center" class="text-muted">v0.6.6 2014年1月2日</p>
+	  <!--
+          <p style="margin:50px 0 50px 0">
+	    <a href="http://marboo.googlecode.com/files/Marboo_v0.6.6.dmg" class="btn btn-default btn-lg">
+	      Download Marboo<br/>
+	      v0.6.6 Jan 2nd 2014
+	    </a>
+	  </p>
+	  -->
+        </div>
+      </div>
+
+      <!-- Indicators -->
+      <!--
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/media/images/marboo/0.6/marboo-ghost.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
-          <div class="span6 splash-message">
-            <div id="themeStep1"><a href="gallery/"></a><img src="/media/images/marboo/0.6/marboo-org.png"></div>
-            <div class="download"><a href="http://marboo.googlecode.com/files/Marboo_v0.6.6.dmg" class="download-button"><span class="inner">
-                  <h4>下载最新</h4>
-                  <p id="current-version-description">v0.6.6 2014年1月2日</p></span></a>
-              <p class="requirements">OS X 10.7+</p><br><a href="/i/">
-                <Marboo>Marboo跨平台Chrome插件(支持Windows，Linux，Mac)</Marboo></a>
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
             </div>
           </div>
         </div>
       </div>
-    </div><br><br>
-    <footer style="text-align: center; margin: 50px 0;" class="footer">@2013 amoblin. 版权所有. 由<a href="http://marboo.biz"> Marboo</a>和<a href="http://twitter.github.com/bootstrap/"> Twitter Bootstrap </a>强力驱动</footer><!-- begin google analytics -->
-    <script type="text/javascript">
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-37860016-1', 'github.com');
-      ga('send', 'pageview');
-      
-    </script><!-- begin olark code -->
-    <script type="text/javascript">
-      /*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
-      f[z]=function(){
-      (a.s=a.s||[]).push(arguments)};var a=f[z]._={
-      },q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
-      f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
-      0:+new Date};a.P=function(u){
-      a.p[u]=new Date-a.p[0]};function s(){
-      a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
-      hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
-      return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
-      b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
-      b.contentWindow[g].open()}catch(w){
-      c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
-      var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
-      b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
-      loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-      /* custom configuration goes here (www.olark.com/documentation) */
-      olark.identify('7030-323-10-6024');/*]]>*/
-      <noscript><a href="https://www.olark.com/site/7030-323-10-6024/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
-    </script><!-- end olark code -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      -->
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <hr class="featurette-divider" style="margin:70px 0">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="/media/images/marboo/icons/editor.png" alt="Generic placeholder image" width="60px" height="60px">
+          <h2>自由选择编辑器</h2>
+          <p class="text-muted">支持 Mou / Vim / Emacs / Sublime Text 等编辑器。</p>
+          <p><a class="btn btn-default" href="/guide/" role="button">详细信息 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="/media/images/marboo/icons/hash.png" alt="Generic placeholder image" width="50px" height="50px">
+          <h2>支持Markdown等标记语言</h2>
+          <p class="text-muted">内置支持Markdown、reStructuredText、Org-mode。通过自定义扩展可以支持任意<a href="http://zh.wikipedia.org/wiki/%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80">标记语言</a>。</p>
+          <p><a class="btn btn-default" href="#" role="button">详细信息 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="/media/images/marboo/icons/eye.png" alt="Generic placeholder image">
+          <h2>轻松浏览笔记</h2>
+	  <p class="text-muted">三栏式界面，浏览笔记，宛若使用Reeder来阅读RSS文章一样。</p>
+          <p><a class="btn btn-default" href="#" role="button">详细信息  &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">安全 <span class="text-muted">所有内容，你来保管</span></h2>
+          <p class="lead">笔记等文件存储在本地文件(夹)中，离开Marboo，仍然可以继续访问您的所有文件。Marboo只是实时响应您对文件(夹)的操作。</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="/media/images/marboo/gifs/marboo-folder.gif" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="/media/images/marboo/friends/marboo-with-dropbox.png" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">随心同步 <span class="text-muted"></span></h2>
+          <p class="lead">支持使用Dropbox或Git来同步文件到不同的PC上。</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">笔记外观，你来决定 <span class="text-muted"></span></h2>
+          <p class="lead">通过修改CSS文件来定制所有笔记的外观</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="/media/images/marboo/marboo-icon-theme.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="/media/images/marboo/marboo-icon-open.png" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">小范围内，共享笔记 <span class="text-muted"></span></h2>
+          <p class="lead">把笔记的链接地址告诉你的小伙伴们，同一网段的伙伴就可以点击查看。(想要关闭共享？重启Marboo即可)</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">笔记、博客，合而为一 <span class="text-muted"></span></h2>
+          <p class="lead">用Marboo来管理Jekyll / Octopress / Hexo / Ghost 的博文是再好不过了。笔记？博客？有必要分那么清吗？发布到WordPress / Ghost 也是极好的。</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="/media/images/marboo/friends/marboo-with-jekyll.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="/media/images/marboo/logos/pygments.png" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">码农福利，代码管理 <span class="text-muted"></span></h2>
+          <p class="lead">内置<a href="http://pygments.org/">Pygments</a>，所有的代码文件在Marboo里都语法高亮显示。</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">GUI和CLI的二重唱 <span class="text-muted"></span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="/media/images/marboo/gifs/marboo-terminal.gif" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!--
+      <div class="row featurette" id="download">
+	<div class="col-md-12">
+	  <h2 class="featurette-heading">更多新特性 <span class="text-muted">即将发布</span><h2>
+	      Marboo
+	      <p style="text-align:center">
+		<a href="http://marboo.googlecode.com/files/Marboo_v0.6.6.dmg" class="btn btn-default btn-lg">
+		  Download Marboo<br/>
+		  v0.6.6 Jan 2nd 2014
+		</a>
+	      </p>
+	</div>
+      </div>
+      -->
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+      <!-- Friends -->
+      <div class="row featurette">
+      <div class="col-md-12" id="tools">
+	<h1> Marboo友好支持的小伙伴们</h1>
+	<br/>
+	<ul>
+	  <li><a href="https://db.tt/p8LtkZ2" class="dropbox" title="Dropbox">Dropbox</a></li>
+	  <li><a href="http://mouapp.com/" class="mou" title="Mou">Mou</a></li>
+	  <li><a href="http://git-scm.com/" class="git" title="Git">Git</a></li>
+	  <li><a href="https://github.com/" class="github" title="GitHub">GitHub</a></li>
+	  <li><a href="http://code.google.com/p/macvim/" class="macvim" title="MacVim">MacVim</a></li>
+	  <li><a href="http://emacsformacosx.com/" class="emacs" title="Emacs for OSX">Emacs</a></li>
+	  <li><a href="http://totalterminal.binaryage.com/" class="totalterminal" title="TotalTerminal">TotalTerminal</a></li>
+	  <li><a href="http://jekyllrb.com/" class="jekyll">Jekyll</a></li>
+	  <li><a href="http://zespia.tw/hexo/" class="hexo">Hexo</a></li>
+	  <li><a href="https://ghost.org/" class="ghost">Ghost</a></li>
+	  <li><a href="" class=""></a></li>
+	  <li><a href="" class=""></a></li>
+	</ul>
+      </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">回顶部</a></p>
+        <p>&copy; 2014 Marboo </p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/media/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/media/js/holder.js"></script>
   </body>
 </html>
