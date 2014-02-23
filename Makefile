@@ -1,7 +1,7 @@
 #dest=~/Dropbox/Apps/FarBox/marboo
 dest=/tmp/marboo.biz
 default:
-	cp ~/Library/Application\ Support/Marboo/www/misc/marboo-doc/README.rst.html guide/index.html
+	#cp ~/Library/Application\ Support/Marboo/www/misc/marboo-doc/README.rst.html guide/index.html
 	#cp ~/.marboo/build/marboo/install.rst.html install-crx.html
 	#find .|grep jade| xargs jade -P
 	jekyll build -s . -d ${dest}
