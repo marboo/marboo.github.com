@@ -5,6 +5,7 @@ default:
 	#cp ~/.marboo/build/marboo/install.rst.html install-crx.html
 	jade -O index.jade.json -P < views/index.jade > index.html
 	jade -O zh_CN/index.jade.json -P < views/index.jade > zh_CN/index.html
+	jade -O packages.jade.json -P < views/packages.jade > packages/index.html
 	#find . -name *.jade | xargs jade -P
 	jekyll build -s . -d ${dest}
 	#cp -r ../../media/marboo.biz ${dest}/media/

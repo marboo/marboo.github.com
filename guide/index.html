@@ -28,7 +28,7 @@
         </script>
     </head>
     <body>
-      <h1 class="title">Marboo用户手册(v0.7)</h1>
+      <h1 class="title">Marboo用户手册(v0.8)</h1>
 
 <div class="contents topic" id="id1">
 <p class="topic-title first">目录</p>
@@ -157,7 +157,8 @@
 <div class="section" id="marboo">
 <h1><a class="toc-backref" href="#id58">欢迎使用Marboo</a></h1>
 <!-- 自0.4.1版起，MarkBook改名为Marboo，同时更换了全新的界面。看着还可以吧？ -->
-<p>欢迎您使用Marboo，目前版本为 v0.7</p>
+<!-- 自0.8版起，简化了映射规则，从而使写扩展变简单！ -->
+<p>欢迎您使用Marboo，目前版本为 v0.8</p>
 <p>查看新增了什么功能：<a class="reference external" href="http://marboo.biz/release-notes/">http://marboo.biz/release-notes/</a></p>
 </div>
 <div class="section" id="id2">
@@ -186,27 +187,24 @@
 <li>我要写reStructuredText文件，转换为HTML来显示</li>
 <li>我要写Org-mode文件，实时显示HTML。</li>
 </ul>
-<p>用转换规则来描述，就是：</p>
+<p>用转换规则来描述：</p>
 <ul class="simple">
 <li>对于markdown文件，用md2html处理，然后输出；</li>
 <li>对于reStructuredText文件，用rst2html处理，然后输出；</li>
 <li>对于Org-mode文件，用org2html.el处理，然后输出；</li>
 </ul>
-<p>这里的转换比较简单，只有1层。下面看一个稍微复杂的。</p>
-<p>针对代码之间的转化功能，比如：</p>
+<p>针对代码之间的转化功能，可能的需求有：</p>
 <ul class="simple">
 <li>我喜欢写coffee script，但希望实时看到生成的javascript的效果；</li>
 <li>我喜欢写Jade，希望实时看到生成的HTML的效果；</li>
 <li>我喜欢用Stylus，希望实时看到生成的css内容</li>
 </ul>
-<p>对应的转换规则就是：</p>
+<p>用转换规则来描述：</p>
 <ul class="simple">
 <li>对于coffee script文件，先转换为javascript，然后语法高亮，最后输出。</li>
 <li>对于jade文件，先转为HTML文件，然后语法高亮，最后输出。</li>
 <li>对于stylus文件，先生成css，然后语法高亮，然后输出；</li>
 </ul>
-<p>这里使用了2层转换，第1层是生成代码，第2层是把生成的代码高亮。</p>
-<p>转换规则可以是各种各样的。</p>
 <p>比如，一个python脚本，内容如下：</p>
 <div class="highlight"><pre style="line-height: 125%"><span style="color: #408080; font-style: italic">#!/usr/bin/python</span><br/><span style="color: #408080; font-style: italic"># -*- coding:utf-8 -*-</span><br/><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">sys</span><br/><span style="color: #008000; font-weight: bold">print</span> <span style="color: #BA2121">&quot;你好&quot;</span><br/><span style="color: #008000; font-weight: bold">print</span> <span style="color: #BA2121">&#39;&lt;a href=&quot;http://marboo.biz&quot;&gt;marboo主页&lt;/a&gt;&#39;</span><br/></pre></div>
 <p>可能的转换有：</p>
@@ -254,23 +252,19 @@ rst文件：rst2html
 </div>
 <div class="section" id="id8">
 <h1><a class="toc-backref" href="#id64">处理过程</a></h1>
+<p>配置文件是 <cite>rules.json</cite></p>
 <div class="section" id="id9">
 <h2><a class="toc-backref" href="#id65">自动初始化内容</a></h2>
-<p>在 media/file_init 目录下，定义了各种文件类型的初始化模板，在创建该类型文件的时候，会复制一份，
+<p>在 media/starts 目录下，定义了各种文件类型的初始化模板，在创建该类型文件的时候，会复制一份，
 并且自动添加上标题名(从文件名取)，创建时间。</p>
 </div>
 <div class="section" id="id10">
 <h2><a class="toc-backref" href="#id66">自定义处理过程</a></h2>
-<p>在 <cite>media/core.marboo.json</cite> 中定义。</p>
-<p>当文件内容被修改时，Marboo会在 <cite>core.marboo.json</cite> 中寻找符合条件的处理过程来执行，将结果在
-右栏呈现。</p>
+<p>配置文件中的`convert`键来定义当前的转换序列。</p>
 </div>
 <div class="section" id="id11">
 <h2><a class="toc-backref" href="#id67">自定义输出样式</a></h2>
-<dl class="docutils">
-<dt><cite>media/core.marboo.json</cite> 中一般最后的处理是包装模板处理。模板文件一般存放在</dt>
-<dd>media/templates 下。</dd>
-</dl>
+<p>转换序列中最后一个转换一般都是包装模板处理。模板文件一般存放在views下。</p>
 </div>
 <div class="section" id="pygmentize">
 <h2><a class="toc-backref" href="#id68">Pygmentize支持</a></h2>
@@ -285,8 +279,8 @@ rst文件：rst2html
 <p>Marboo首先是一个个人笔记管理应用，所以内置Markdown和reStructuredText的支持。</p>
 <div class="section" id="md">
 <h3><a class="toc-backref" href="#id71">md格式</a></h3>
-<p>初始化文件（内容在/media/file_init/default.init.md）：</p>
-<div class="highlight"><pre style="line-height: 125%"># %@<br/>&lt;!--<br/>    modify /media/file_init/default.init.md to change the init content of *.md files.<br/>--&gt;<br/><br/>%@<br/></pre></div>
+<p>初始化文件（内容在/media/starts/default.md）：</p>
+<div class="highlight"><pre style="line-height: 125%"># %@<br/>&lt;!--<br/>    modify /media/starts/default.md to change the init content of *.md files.<br/>--&gt;<br/><br/>%@<br/></pre></div>
 <p>其中有两个参数，用 %&#64; 表示。</p>
 <ul class="simple">
 <li>第１个代表文件名</li>
