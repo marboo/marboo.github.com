@@ -16,6 +16,11 @@
     background-size: 64px 64px;
 }
 
+.btsync {
+    background: transparent url("/media/marboo.biz/logos/BitTorrent@2x.png") top center no-repeat;
+    background-size: 64px 64px;
+}
+
 .emacs {
     background: transparent url("/media/marboo.biz/logos/Emacs@2x.png") top center no-repeat;
     background-size: 64px 64px;
