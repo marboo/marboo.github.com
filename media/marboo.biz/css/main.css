@@ -1,0 +1,39 @@
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+	.appstore a {
+		background-image:url(../img/appstore@2x.png);
+	}	
+}
+
+.appstore a {
+	width: 160px;
+	background-size: 160px 38px;
+}
+
+.appstore {
+	margin: 50px 0 30px 0;
+	padding: 0;
+	text-align: center;
+}
+.appstore a {
+	display: block;
+	margin:0 auto;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+	height: 38px;
+	text-decoration: none;
+	border: 0;
+	background-image:url(../images/appstore.png);
+	background-color: rgb(231,230,225);
+	border-radius: 4px;
+}
+.appstore span {
+	font-size: 11px;
+	opacity: 0.5;
+}
