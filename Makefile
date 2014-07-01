@@ -18,6 +18,10 @@ default:
 
 	mkdir ${dest}/media/packages
 	cp -r ../../media/packages/markdown ${dest}/media/packages
+
+	mkdir ${dest}/media/images
+	cp -r ../../media_v0.6/images/marboo ${dest}/media/images
+
 	cp ~/Library/Application\ Support/Marboo/www/slides/marboo-intro.remark.md.html ${dest}/marboo-intro.remark.md.html
 	cp .gitignore /tmp/marboo.biz
 clean:
