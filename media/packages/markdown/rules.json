@@ -1,31 +1,15 @@
 {
     "type": "Markdown",
+    "disabled": true,
     "extension": ["md", "markdown"],
     "convert": [{
 	"name": "md2html",
 	"is_internal": false,
 	"path": "converts/md2html.sh"
-    },{
-	"name": "remarkTemplate",
-	"output_file_extension": "html",
-	"is_template": true,
-	"path": "views/remark.md.html"
-    },{
-	"name": "texTemplate",
-	"is_template": true,
-	"path": "views/tex.md.html",
     }],
     "mapper": [{
 	"type": "*",
 	"init": "starts/default.md",
 	"router": ["md2html", "marbooTemplate"]
-    },{
-	"type": "remark.md",
-	"init": "starts/default.remark.md",
-	"router": ["remarkTemplate"]
-    },{
-	"type": "tex.md",
-	"init": "starts/default.tex.md",
-	"router": ["md2html", "texTemplate"]
     }]
 }

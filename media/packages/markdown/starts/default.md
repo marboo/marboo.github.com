@@ -1,4 +1,0 @@
-# {{title}}
-
-<!-- create time: {{date}}  -->
-
