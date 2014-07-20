@@ -21,6 +21,7 @@ default:
 
 	mkdir ${dest}/media/images
 	cp -r ../../media_v0.6/images/marboo ${dest}/media/images
+	cp -r ../../media/marboo.biz/images/icons/* ${dest}/media/images/marboo
 
 	cp ~/Library/Application\ Support/Marboo/www/slides/marboo-intro.remark.md.html ${dest}/marboo-intro.remark.md.html
 	cp .gitignore /tmp/marboo.biz
