@@ -1,6 +1,6 @@
 {
     "type": "Markdown",
-    "disabled": true,
+    "disabled": false,
     "extension": ["md", "markdown"],
     "convert": [{
 	"name": "md2html",
@@ -10,6 +10,7 @@
     "mapper": [{
 	"type": "*",
 	"init": "starts/default.md",
-	"router": ["md2html", "marbooTemplate"]
+	"router": ["md2html", "marbooTemplate"],
+	"editor": "Mou"
     }]
 }
