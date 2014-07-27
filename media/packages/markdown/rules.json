@@ -4,13 +4,13 @@
     "extension": ["md", "markdown"],
     "convert": [{
 	"name": "md2html",
-	"is_internal": false,
+	"is_internal": true,
 	"path": "converts/md2html.sh"
     }],
     "mapper": [{
 	"type": "*",
 	"init": "starts/default.md",
-	"router": ["md2html", "marbooTemplate"],
+	"router": ["md2html", "markdownTemplate"],
 	"editor": "Mou"
     }]
 }
