@@ -17,7 +17,7 @@ default:
 #	cp ~/Library/Application\ Support/Marboo/www/WebSites/marboo.biz/source/install.md.html i/build/Marboo-for-Web-介绍.md.html
 #	cp ~/Library/Application\ Support/Marboo/www/WebSites/marboo.biz/source/install.md.html install-crx.html
 
-	cp -r ../../.media/packages/markdown ${dest}/media/packages
+#	cp -r ../../.media/packages/markdown ${dest}/media/packages
 
 	mkdir ${dest}/media/images
 	cp -r ../../media_v0.6/images/marboo ${dest}/media/images
