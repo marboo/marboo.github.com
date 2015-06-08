@@ -1,5 +1,5 @@
 #dest=~/Dropbox/Apps/FarBox/marboo
-dest=/tmp/marboo.biz
+dest=/tmp/marboo.io
 default:
 #	cp ~/Library/Application\ Support/Marboo/www/misc/marboo-doc/README.rst.html guide/index.html
 	#cp ~/.marboo/build/marboo/install.rst.html install-crx.html
@@ -9,11 +9,11 @@ default:
 	#find . -name *.jade | xargs jade -P
 	jekyll build -s . -d ${dest}
 	mkdir -p ${dest}/media/packages
-	cp -r ../../.media/marboo.biz ${dest}/media/
+	#cp -r ../../.media/marboo.io ${dest}/media/marboo.biz
 	cp -r ../../.media/css ${dest}/media/
 	#find .|grep index.html | xargs rm -f
-	find /tmp/marboo.biz|grep jade$$ |xargs rm -f
-	find /tmp/marboo.biz|grep json$$ |xargs rm -f
+	find ${dest}|grep jade$$ |xargs rm -f
+	find ${dest}|grep json$$ |xargs rm -f
 #	cp ~/Library/Application\ Support/Marboo/www/WebSites/marboo.biz/source/install.md.html i/build/Marboo-for-Web-介绍.md.html
 #	cp ~/Library/Application\ Support/Marboo/www/WebSites/marboo.biz/source/install.md.html install-crx.html
 
@@ -21,11 +21,11 @@ default:
 
 	mkdir ${dest}/media/images
 	cp -r ../../media_v0.6/images/marboo ${dest}/media/images
-	cp -r ../../.media/marboo.biz/images/icons/* ${dest}/media/images/marboo
+	cp -r ../../.media/marboo.io/images/icons/* ${dest}/media/images/marboo
 	cp -r ../../.media/lib ${dest}/media/
 
 #	cp ~/Library/Application\ Support/Marboo/www/slides/marboo-intro.remark.md.html ${dest}/marboo-intro.remark.md.html
-	cp .gitignore /tmp/marboo.biz
+	cp .gitignore ${dest}
 clean:
 	find .|grep index.html | xargs rm -f
 

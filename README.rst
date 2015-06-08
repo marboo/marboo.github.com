@@ -1,6 +1,6 @@
-================
-Marboo官网网站
-================
+=========================
+Marboo Official Homepage
+=========================
 
 .. Author: your_name 
 .. title:: this is the real title in Jekyll.
@@ -9,4 +9,4 @@ Marboo官网网站
 ..  This file is created from ~/.marboo/source/media/bin/default.init.rst
 .. 本文件由 ~/.marboo/source/media/bin/default.init.rst 复制而来
 
-http://marboo.biz
+http://marboo.io
