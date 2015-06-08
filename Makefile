@@ -1,7 +1,7 @@
 #dest=~/Dropbox/Apps/FarBox/marboo
 dest=/tmp/marboo.io
 default:
-#	cp ~/Library/Application\ Support/Marboo/www/misc/marboo-doc/README.rst.html guide/index.html
+	cp ~/Library/Containers/biz.marboo.Marboo/Data/Library/Application\ Support/Marboo/www/MyNotes.localized/marboo-doc/marboo-readme_v0.9.rst.html guide/index.html
 	#cp ~/.marboo/build/marboo/install.rst.html install-crx.html
 	jade -O index.jade.json -P < views/index.jade > index.html
 	jade -O zh_CN/index.jade.json -P < views/index.jade > zh_CN/index.html
