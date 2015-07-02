@@ -11,6 +11,11 @@
     float: left;
 }
 
+.finder {
+    background: transparent url("/media/marboo.biz/logos/Finder@2x.png") top center no-repeat;
+    background-size: 64px 64px;
+}
+
 .dropbox {
     background: transparent url("/media/marboo.biz/logos/dropbox@2x.png") top center no-repeat;
     background-size: 64px 64px;
