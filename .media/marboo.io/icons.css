@@ -32,8 +32,8 @@
 }
 
 .git {
-    background: transparent url("/.media/marboo.io/logos/git@2x.png") top center no-repeat;
-    background-size: 91px 38px;
+    background: transparent url("/.media/marboo.io/logos/git@2x.png") center center no-repeat;
+    background-size: 100px 42px;
     background-position: 0 15px;
 }
 
@@ -65,8 +65,7 @@
 
 .sphinx {
     background: transparent url("/.media/marboo.io/logos/sphinx@2x.png") top center no-repeat;
-    background-size: 68px 46px;
-    background-position: 0 10px;
+    background-size: 94px 64px;
 }
 
 .jekyll {
@@ -77,11 +76,20 @@
 
 .hexo {
     background: transparent url("/.media/marboo.io/logos/hexo@2x.png") top center no-repeat;
-    background-size: 88px 48px;
-    background-position: 0 10px;
+    background-size: 55px 64px;
 }
 
 .atom {
     background: transparent url("/.media/marboo.io/logos/atom@2x.png") top center no-repeat;
+    background-size: 64px 64px;
+}
+
+.sublime {
+    background: transparent url("/.media/marboo.io/logos/sublime@2x.png") top center no-repeat;
+    background-size: 64px 64px;
+}
+
+.textmate {
+    background: transparent url("/.media/marboo.io/logos/textmate@2x.png") top center no-repeat;
     background-size: 64px 64px;
 }
