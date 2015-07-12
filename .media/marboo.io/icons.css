@@ -29,6 +29,7 @@
 .emacs {
     background: transparent url("/.media/marboo.io/logos/Emacs@2x.png") top center no-repeat;
     background-size: 64px 64px;
+    background-position-y: 2px;
 }
 
 .git {
@@ -52,6 +53,12 @@
     background-size: 64px 64px;
 }
 
+.macdown {
+    background: transparent url("/.media/marboo.io/logos/MacDown@2x.png") top center no-repeat;
+    background-size: 70px 70px;
+    background-position-y: -4px;
+}
+
 .totalterminal {
     background: transparent url("/.media/marboo.io/logos/TotalTerminal@2x.png") top center no-repeat;
     background-size: 64px 64px;
@@ -65,7 +72,8 @@
 
 .sphinx {
     background: transparent url("/.media/marboo.io/logos/sphinx@2x.png") top center no-repeat;
-    background-size: 94px 64px;
+    background-size: 73px 50px;
+    background-position: 1px 6px;
 }
 
 .jekyll {
@@ -81,12 +89,14 @@
 
 .atom {
     background: transparent url("/.media/marboo.io/logos/atom@2x.png") top center no-repeat;
-    background-size: 64px 64px;
+    background-size: 70px 70px;
+    background-position-y: -5px;
 }
 
 .sublime {
     background: transparent url("/.media/marboo.io/logos/sublime@2x.png") top center no-repeat;
     background-size: 64px 64px;
+    babckground-position: 0 0 0 -10px;
 }
 
 .textmate {
