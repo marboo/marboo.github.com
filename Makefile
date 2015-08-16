@@ -1,13 +1,12 @@
 #dest=~/Dropbox/Apps/FarBox/marboo
 dest=/tmp/marboo.io
 default:
-	cp ~/Library/Containers/biz.marboo.Marboo/Data/Library/Application\ Support/Marboo/www/MyNotes.localized/marboo-doc/marboo-readme_v0.9.rst.html guide/index.html
 	#cp ~/.marboo/build/marboo/install.rst.html install-crx.html
 	jade -O index.jade.json -P < views/index.jade > index.html
 	jade -O zh_CN/index.jade.json -P < views/index.jade > zh_CN/index.html
 	jade -O packages.jade.json -P < views/packages.jade > packages/index.html
 	#find . -name *.jade | xargs jade -P
-	jekyll build -s . -d ${dest}
+	cp -r . ${dest}
 	cp .nojekyll ${dest}/
 	mkdir -p ${dest}/.media/packages
 	cp -r ../../.media/marboo.io ${dest}/.media/marboo.io
