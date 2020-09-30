@@ -1,4 +1,4 @@
-## Marboo for Chrome安装指南
+## Method for Chrome安装指南
 
 <!--
 .. Author: your_name 
@@ -25,7 +25,7 @@
 
 ### 3.解压缩到目录
 
-#### *Windows用户*
+#### *Windows用户*,7
 
 * **XP用户**，解压缩到目录
 
